@@ -14,6 +14,9 @@ public class practiceActivity extends AppCompatActivity {
 
     Button nextBTN;
 
+    int score;
+    int RightIndex;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

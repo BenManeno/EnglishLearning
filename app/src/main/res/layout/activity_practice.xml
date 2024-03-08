@@ -8,14 +8,22 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".practiceActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:layout_marginTop="-30dp"
+        android:textStyle="bold"
+        android:text="PRACTICE SECTION "/>
 
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textSize="22dp"
-    android:layout_marginTop="-30dp"
+    android:id="@+id/practiceTV"
+    android:layout_marginTop="-80dp"
     android:textStyle="bold"
-    android:text="PRACTICE SECTION "/>
+    android:text=" "/>
 
 
     <TextView
@@ -27,9 +35,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_marginTop="70dp"
+        android:id="@+id/practiceQTV"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="__ time did you wake up ?"
+        android:text="@string/question1Text"
 
         />
 

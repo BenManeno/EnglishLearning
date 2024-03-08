@@ -29,17 +29,17 @@ public class CategoriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
 
-        testBTN=(Button) findViewById(R.id.testBTN);
+//        testBTN=(Button) findViewById(R.id.testBTN);
         practiceBTN=(Button) findViewById(R.id.practiceBTN);
        greetingTV=(TextView)findViewById(R.id.greetingTV);
-        practiceTV=(TextView)findViewById(R.id.practiceTV);
-        testTV=(TextView) findViewById(R.id.testTV);
+//        practiceTV=(TextView)findViewById(R.id.practiceTV);
+//        testTV=(TextView) findViewById(R.id.testTV);
 
 
         myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
 
         name= myPreferences.getString(Name_Key,"");
-        greetingUser = "Hello  " + name +" Welcome to English Learning App";
+        greetingUser = "Hello  " + name +" Welcome to English Learning App ";
         greetingTV.setText(greetingUser);
 
 
@@ -52,7 +52,7 @@ public class CategoriesActivity extends AppCompatActivity {
         });
 
 
-        practiceTV.getText();
+
 
 
 

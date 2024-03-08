@@ -24,15 +24,14 @@
         android:layout_marginTop="200dp"
         android:textSize="22dp"
         android:textStyle="bold"
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="180dp"
         android:text="CATEGORIES"/>
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple"
-        android:layout_marginLeft="222dp"
+        android:layout_marginLeft="330dp"
         android:layout_marginTop="222dp"
         android:textSize="12dp"
         android:id="@+id/testBTN"
@@ -40,7 +39,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="-50dp"
         android:backgroundTint="@color/purple"
         android:id="@+id/practiceBTN"
@@ -48,23 +47,7 @@
         android:text="PRACTICE"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="40dp"
-        android:id="@+id/practiceTV"
-        android:textSize="20dp"
-        android:text="500%"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="250dp"
-        android:textSize="20dp"
-        android:id="@+id/testTV"
-        android:layout_marginTop="-30dp"
-        android:text="100%"/>
 
 
 

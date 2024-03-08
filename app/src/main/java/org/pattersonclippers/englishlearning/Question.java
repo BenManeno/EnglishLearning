@@ -1,3 +1,5 @@
+package org.pattersonclippers.englishlearning;
+
 public class Question {
 
 
@@ -14,7 +16,7 @@ public class Question {
 
 
 
-    public Question(){
+    public Question(String string, String s, String string1, String s1){
         choiceBxOne="";
         choiceBxTwo="";
         questionText="";

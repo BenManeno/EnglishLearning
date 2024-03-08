@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">EnglishLearning</string>
+    <string name="question1Text">__time did you wake up?</string>
+    <string name="firstChoiceBox">What</string>
+    <string name="secondChoiceBox">Who</string>
+    <string name="correctMessage">Right</string>
+    <string name="WrongMsg">Wrong</string>
+    <string name="correctAnswerBox1">What</string>
+    <string name="NewBox1">what</string>
+    <string name="NewBoxText1">who</string>
+
+
+    <string name="question2Text">__did you wake up?</string>
+    <string name="correctAnswerBox2">When</string>
+    <string name="NewBox2">When</string>
+    <string name="NewBoxText2">What
+
+    </string>
+
+
 </resources>

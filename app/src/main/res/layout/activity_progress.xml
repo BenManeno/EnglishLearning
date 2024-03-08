@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".progressActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginRight="150dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="To be"
+        />
+
+
+
+    <ProgressBar
+        android:id="@+id/tobeProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="350dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        />
+    <TextView
+        android:id="@+id/tobeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="-20dp"
+        android:textSize="15dp"
+        android:text="  100%"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="150dp"
+        android:textStyle="bold"
+        android:text="Simple Past"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/simplepastprogressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="350dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        />
+    <TextView
+        android:id="@+id/simplePastTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="-20dp"
+
+        android:textSize="15dp"
+        android:text="  100%"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

@@ -8,10 +8,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    EditText nameET;
+    EditText nameET,pwET;
     Button saveBTN, loginBTN;
+
+
+
+
     private SharedPreferences myPreferences;
     private String fileName = "org.pattersonclippers.EnglishLearning.App";
     private final String NAME_KEY = "name";
@@ -25,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         nameET=(EditText) findViewById(R.id.nameTV);
+        pwET=(EditText) findViewById(R.id.pwET);
         saveBTN=(Button) findViewById(R.id.saveBTN);
         loginBTN=(Button) findViewById(R.id.loginBTN);
         userName="";
@@ -40,8 +46,17 @@ public class MainActivity extends AppCompatActivity {
         loginBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,CategoriesActivity.class);
-                startActivity(intent);
+                if(pwET.getText().toString().equals("777")){
+                    Toast.makeText(MainActivity.this,"Login Successful  ",Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(MainActivity.this,CategoriesActivity.class);
+                    startActivity(intent);
+                }
+
+                else{
+                    Toast.makeText(MainActivity.this,"Wrong password try again ",Toast.LENGTH_SHORT).show();
+                }
+
+
             }
         });
 

@@ -4,95 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/backgroundColors"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".practiceActivity">
+    android:id="@+id/backgroundColors"
+    tools:context=".testActivity"
+    tools:ignore="ExtraText">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:layout_marginTop="-30dp"
+        android:textSize="22dp"
         android:textStyle="bold"
-        android:text="PRACTICE SECTION "/>
+        android:text="TEST SECTION "/>
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="20dp"/>
+        android:layout_height="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:id="@+id/usernameTV"
+        android:textStyle="bold"
+        android:text="Hello name "/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"/>
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/total_question"
-        android:textSize="25dp"
         android:textStyle="bold"
+        android:textSize="17dp"
         android:text="Total Question : "/>
-
-
-
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="22dp"
-    android:id="@+id/practiceTV"
-    android:textStyle="bold"
-    android:text=" "/>
-
-
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_marginTop="70dp"
-        android:id="@+id/practiceQTV"
-        android:textSize="25dp"
         android:layout_height="wrap_content"
+        android:id="@+id/questionText"
         android:textStyle="bold"
-        android:text="@string/question1Text"
+        android:textSize="17dp"
+        android:text="I                at school. "
+       />
 
-        />
 
 
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
         android:layout_width="wrap_content"
-
         android:gravity="center"
+        android:id="@+id/choice_layout"
         android:orientation="horizontal">
+
+
 
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/firstChoiceBox"
+            android:id="@+id/firstChoiceBTN"
             android:backgroundTint="@color/cardview_dark_background"
-            android:textSize="20dp"
-            android:text="What"/>
+            android:text="am"/>
         <Space
             android:layout_width="50dp"
             android:layout_height="50dp"/>
 
-        <Button
+       <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/secondChoiceBox"
-            android:textSize="20dp"
-            android:backgroundTint="@color/cardview_dark_background"
-            android:text="When"/>
+           android:backgroundTint="@color/cardview_dark_background"
+            android:id="@+id/secondChoiceBTN"
+            android:text="is"/>
 
 
 
 
     </LinearLayout>
     <Space
-        android:layout_width="300dp"
-        android:layout_height="90dp"
-/>
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"/>
+
     <Button
-        android:id="@+id/nextBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEXT QUESTION" />
+
+        android:backgroundTint="@color/cardview_dark_background"
+        android:id="@+id/nextBTN"
+        android:text="NEXT QUESTION"/>
+
+
+
+
+
+
+
 
 
 </LinearLayout>

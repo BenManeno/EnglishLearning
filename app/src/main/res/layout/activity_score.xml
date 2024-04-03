@@ -5,10 +5,21 @@
     android:layout_width="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/vanilla"
+    android:id="@+id/backgroundColors"
     android:layout_height="match_parent"
     tools:context=".scoreActivity">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Hello"
+        android:id="@+id/greetingTV"/>
+    <Space
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        />
 
 
 
@@ -17,21 +28,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Your Score is: "
         android:textAlignment="center"
         android:textStyle="bold"
         android:textSize="20dp" />
     <Space
-        android:layout_width="200dp"
-        android:layout_height="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         />
 
 
+
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
         android:id="@+id/openTB"
+        android:backgroundTint="@color/cardview_dark_background"
         android:text="Open progress"/>
+
+
 
 
 

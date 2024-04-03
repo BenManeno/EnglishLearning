@@ -1,21 +1,59 @@
 <resources>
     <string name="app_name">EnglishLearning</string>
-    <string name="question1Text">__time did you wake up?</string>
+    <string name="question1Text">    time did you wake up?</string>
     <string name="firstChoiceBox">What</string>
     <string name="secondChoiceBox">Who</string>
     <string name="correctMessage">Right</string>
     <string name="WrongMsg">Wrong</string>
     <string name="correctAnswerBox1">What</string>
-    <string name="NewBox1">what</string>
+    <string name="NewBox1">What</string>
     <string name="NewBoxText1">who</string>
 
 
-    <string name="question2Text">__did you wake up?</string>
-    <string name="correctAnswerBox2">When</string>
-    <string name="NewBox2">When</string>
-    <string name="NewBoxText2">What
+    <string name="question2Text"> Your __ very kind.</string>
+    <string name="correctAnswerBox2">are</string>
+    <string name="NewBox2">may</string>
+    <string name="NewBoxText2">are</string>
 
-    </string>
+    <string name="question3Text"> They__ going to the party.</string>
+    <string name="correctAnswerBox3">are</string>
+    <string name="NewBox3">do</string>
+    <string name="NewBoxText3">are</string>
+
+        <string name="question4Text">  She _____ a doctor .</string>
+    <string name="correctAnswerBox4">is</string>
+    <string name="NewBox4">not</string>
+    <string name="NewBoxText4">is</string>
+
+
+    <string name="question5Text">  I _____a student.</string>
+    <string name="correctAnswerBox5">am</string>
+    <string name="NewBox5">are</string>
+    <string name="NewBoxText5">am</string>
+
+    <string name="question6Text">  You _____ my best friend.</string>
+    <string name="correctAnswerBox6">are</string>
+    <string name="NewBox6">are</string>
+    <string name="NewBoxText6">my</string>
+
+    <string name="question7Text"> He___at the park</string>
+    <string name="correctAnswerBox7">is</string>
+    <string name="NewBox7">are</string>
+    <string name="NewBoxText7">is</string>
+
+
+    <string name="question8Text"> He___a great musician</string>
+    <string name="correctAnswerBox8">is</string>
+    <string name="NewBox8">are</string>
+    <string name="NewBoxText8">is</string>
+
+
+
+
+
+
+
+
 
 
 </resources>

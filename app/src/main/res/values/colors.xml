@@ -3,7 +3,18 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="vanilla">#F3E5AB</color>
-    <color name="YellowOrange">#FFAA33</color>
+    <color name="yellowOrange">#FFAA33</color>
     <color name="purple">#5E33FF</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="brown">#A52A2A</color>
+    <color name="lameGreen">#00FF00</color>
+    <color name="Cyan"> #00FFFF</color>
+    <color name="midnightBlue">#191970</color>
+    <color name="skyblue"> #82CAFF</color>
+    <color name="ghostwhite"> #F8F8FF</color>
+    <color name="sage"> #BAB86C</color>
 
 </resources>

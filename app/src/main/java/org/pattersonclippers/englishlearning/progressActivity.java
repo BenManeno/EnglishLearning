@@ -1,14 +1,32 @@
 package org.pattersonclippers.englishlearning;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class progressActivity extends AppCompatActivity {
-    ProgressBar toBeProgress,simplepastprogressBar;
+
+    private int currentProgress=0;
+    private String fileName= "org.pattersonclippers.EnglishLearning.App";
+
+    private final String SCORE = "Score";
+    private int score;
+    ProgressBar toBeProgress,simplePastProgressBar;
+    private SharedPreferences myPreferences;
     TextView simplePastTV, tobeTV;
+    Button exitBTN;
+
+    ScoreObject scoreObject;
+
+    CategoriesObject tobe ,pastTense,simplePAst;
+    CategoriesObject[] categoriesNames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +34,30 @@ public class progressActivity extends AppCompatActivity {
         setContentView(R.layout.activity_progress);
 
 
-        toBeProgress=(ProgressBar) findViewById(R.id.tobeProgressBar);
-        simplepastprogressBar=(ProgressBar) findViewById(R.id.simplepastprogressBar);
 
-        simplepastprogressBar.setProgress(55);
-        toBeProgress.setProgress(77);
+
+        toBeProgress=(ProgressBar) findViewById(R.id.tobeProgressBar);
+        simplePastProgressBar=(ProgressBar) findViewById(R.id.simplePastProgressBar);
+        exitBTN=(Button)findViewById(R.id.exitBTN);
+
+        myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
+
+        score =myPreferences.getInt(SCORE,MODE_PRIVATE);
+
+
+
+        simplePastProgressBar.setProgress(55);
+
+        toBeProgress.setProgress(score);
+
+
+        exitBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(progressActivity.this,CategoriesActivity.class);
+                startActivity(myIntent);
+            }
+        });
     }
+
 }

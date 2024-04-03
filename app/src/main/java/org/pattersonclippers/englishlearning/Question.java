@@ -3,9 +3,9 @@ package org.pattersonclippers.englishlearning;
 public class Question {
 
 
-
-    private int levelOne;
-    private int levelTwo;
+//
+//    private int levelOne;
+//    private int levelTwo;
     private String questionText;
     private String correctAnswer;
 
@@ -16,19 +16,19 @@ public class Question {
 
 
 
-    public Question(String string, String s, String string1, String s1){
+    public Question(){
         choiceBxOne="";
         choiceBxTwo="";
         questionText="";
         correctAnswer= "";
-        levelOne= 0;
-        levelTwo=0;
+//        levelOne= 0;
+//        levelTwo=0;
 
     }
 
-    public Question(int levelOne,int levelTwo,String questionText,String correctAnswer,String choiceBxOne,String choiceBxTwo){
-        this.levelOne=levelOne;
-        this.levelTwo=levelTwo;
+    public Question(String questionText,String correctAnswer,String choiceBxOne,String choiceBxTwo){
+//        this.levelOne=levelOne;
+//        this.levelTwo=levelTwo;
         this.questionText=questionText;
         this.correctAnswer=correctAnswer;
         this.choiceBxOne=choiceBxOne;
@@ -36,12 +36,12 @@ public class Question {
     }
 
 
-    public int getLevelOne(){
-        return levelOne;
-    }
-    public int getLevelTwo(){
-        return levelTwo;
-    }
+//    public int getLevelOne(){
+//        return levelOne;
+//    }
+//    public int getLevelTwo(){
+//        return levelTwo;
+//    }
     public String getCorrectAnswer(){
         return correctAnswer;
     }

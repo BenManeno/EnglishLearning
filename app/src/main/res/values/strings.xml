@@ -1,5 +1,11 @@
 <resources>
+
+
     <string name="app_name">EnglishLearning</string>
+
+    <string name="CategoryOne">To be</string>
+
+
     <string name="question1Text">    time did you wake up?</string>
     <string name="firstChoiceBox">What</string>
     <string name="secondChoiceBox">Who</string>
@@ -46,6 +52,16 @@
     <string name="correctAnswerBox8">is</string>
     <string name="NewBox8">are</string>
     <string name="NewBoxText8">is</string>
+
+
+    <string name="CategoryTwo">Past tense</string>
+
+    <string name="question1PastT"> They --- the movies </string>
+
+
+
+
+
 
 
 

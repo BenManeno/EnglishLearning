@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,6 +24,7 @@ public class practiceActivity extends AppCompatActivity {
     private final String SCORE_KEY = "Score";
     final String TAG ="HHHH";
     LinearLayout backgroundColors;
+    MediaPlayer player;
 
 
     Question question1,question2,question3,question4,question5,question6,question7,question8,currentQuestion;
@@ -30,7 +32,7 @@ public class practiceActivity extends AppCompatActivity {
 
 
 
-    Button firstChoiceBox,secondChoiceBox;
+    Button firstChoiceBox,secondChoiceBox,thirdChoice;
     TextView practiceQTV,practiceTV;
 
     Button nextBTN;
@@ -52,6 +54,7 @@ public class practiceActivity extends AppCompatActivity {
         nextBTN=(Button) findViewById(R.id.nextBTN);
         practiceQTV=(TextView)findViewById(R.id.practiceQTV);
         practiceTV=(TextView)findViewById(R.id.practiceTV);
+//        thirdChoice=(Button)findViewById(R.id.thirdChoice);
         backgroundColors=(LinearLayout) findViewById(R.id.backgroundColors);
 
         score=0;
@@ -87,14 +90,14 @@ public class practiceActivity extends AppCompatActivity {
 
 
 
-        question1=new Question(getString(R.string.question1Text),getString(R.string.correctAnswerBox1),getString(R.string.NewBox1),getString(R.string.NewBoxText1));
-        question2=new Question(getString(R.string.question2Text),getString(R.string.correctAnswerBox2),getString(R.string.NewBox2),getString(R.string.NewBoxText2));
-        question3=new Question(getString(R.string.question3Text),getString(R.string.correctAnswerBox3),getString(R.string.NewBox3),getString(R.string.NewBoxText3));
-        question4=new Question(getString(R.string.question4Text),getString(R.string.correctAnswerBox4),getString(R.string.NewBox4),getString(R.string.NewBoxText4));
-        question5=new Question(getString(R.string.question5Text),getString(R.string.correctAnswerBox5),getString(R.string.NewBox5),getString(R.string.NewBoxText5));
-        question6=new Question(getString(R.string.question6Text),getString(R.string.correctAnswerBox6),getString(R.string.NewBox6),getString(R.string.NewBoxText6));
-        question7=new Question(getString(R.string.question7Text),getString(R.string.correctAnswerBox7),getString(R.string.NewBox7),getString(R.string.NewBoxText7));
-        question8=new Question(getString(R.string.question8Text),getString(R.string.correctAnswerBox8),getString(R.string.NewBox8),getString(R.string.NewBoxText8));
+        question1=new Question(getString(R.string.question1Text),new String[]{getString(R.string.NewBox1),getString(R.string.NewBoxText1)},getString(R.string.correctAnswerBox1),getString(R.string.CategoryOne));
+        question2=new Question(getString(R.string.question2Text),new String[]{getString(R.string.NewBox2),getString(R.string.NewBoxText2)},getString(R.string.correctAnswerBox2),getString(R.string.CategoryOne));
+        question3=new Question(getString(R.string.question3Text),new String[]{getString(R.string.NewBox3),getString(R.string.NewBoxText3)},getString(R.string.correctAnswerBox3),getString(R.string.CategoryOne));
+        question4=new Question(getString(R.string.question4Text),new String[]{getString(R.string.NewBox4),getString(R.string.NewBoxText4)},getString(R.string.correctAnswerBox4),getString(R.string.CategoryOne));
+        question5=new Question(getString(R.string.question5Text),new String[]{getString(R.string.NewBox5),getString(R.string.NewBoxText5)},getString(R.string.correctAnswerBox5),getString(R.string.CategoryOne));
+        question6=new Question(getString(R.string.question6Text),new String[]{getString(R.string.NewBox6),getString(R.string.NewBoxText6)},getString(R.string.correctAnswerBox6),getString(R.string.CategoryOne));
+        question7=new Question(getString(R.string.question7Text),new String[]{getString(R.string.NewBox7),getString(R.string.NewBoxText7)},getString(R.string.correctAnswerBox7),getString(R.string.CategoryOne));
+        question8=new Question(getString(R.string.question8Text),new String[]{getString(R.string.NewBox8),getString(R.string.NewBoxText8)},getString(R.string.correctAnswerBox8),getString(R.string.CategoryOne));
 
         // create question 1D array
 
@@ -123,9 +126,9 @@ public class practiceActivity extends AppCompatActivity {
 
                     Log.d(TAG,currentQuestion.toString());
 
-                    practiceQTV.setText(currentQuestion.getQuestionText());
-                    firstChoiceBox.setText(currentQuestion.getChoiceBxOne());
-                    secondChoiceBox.setText(currentQuestion.getChoiceBxTwo());
+                    practiceQTV.setText(currentQuestion.getQuestion());
+                    firstChoiceBox.setText(currentQuestion.getChoices()[0]);
+                    secondChoiceBox.setText(currentQuestion.getChoices()[1]);
 
                 }
                 else{
@@ -154,11 +157,15 @@ public class practiceActivity extends AppCompatActivity {
         firstChoiceBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoiceBxOne())){
+                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[rightIndex])){
                     text=getString(R.string.correctMessage);
                     score=score+1;
+//                    player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
+//                    player.start();
                 }else{
                     text=getString(R.string.WrongMsg);
+//                    player=MediaPlayer.create(practiceActivity.this,R.raw.wrong);
+//                    player.start();
                 }
                 //show the text for right or wrong answer
 
@@ -172,12 +179,18 @@ public class practiceActivity extends AppCompatActivity {
         secondChoiceBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoiceBxTwo())){
+                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[rightIndex])){
                     text="Right";
                     score=score+1;
+
+//                    player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
+//                    player.start();
                 }
                 else{
                     text="Wrong";
+
+//                    player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
+//                    player.start();
                 }
                 int duration=Toast.LENGTH_SHORT;
                 Toast t =Toast.makeText(getApplicationContext(),text,duration);

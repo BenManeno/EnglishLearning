@@ -1,79 +1,73 @@
 package org.pattersonclippers.englishlearning;
 
+import java.util.Arrays;
+
 public class Question {
 
 
-//
-//    private int levelOne;
-//    private int levelTwo;
-    private String questionText;
-    private String correctAnswer;
 
 
-    String choiceBxOne,choiceBxTwo;
+    private String question;
 
+    private String[] choices;
 
+   private  String correctAnswer;
 
+   private String category;
 
-
-    public Question(){
-        choiceBxOne="";
-        choiceBxTwo="";
-        questionText="";
-        correctAnswer= "";
-//        levelOne= 0;
-//        levelTwo=0;
-
+    public Question(String question, String[] choices, String correctAnswer,String category) {
+        this.question = question;
+        this.choices = choices;
+        this.correctAnswer = correctAnswer;
+        this.category=category;
     }
 
-    public Question(String questionText,String correctAnswer,String choiceBxOne,String choiceBxTwo){
-//        this.levelOne=levelOne;
-//        this.levelTwo=levelTwo;
-        this.questionText=questionText;
-        this.correctAnswer=correctAnswer;
-        this.choiceBxOne=choiceBxOne;
-        this.choiceBxTwo=choiceBxTwo;
+    public Question() {
+        question="What";
+        choices=new String[]{"is","are"};
+        correctAnswer="is";
+        category="unknown";
     }
 
+    public String getQuestion() {
+        return question;
+    }
 
-//    public int getLevelOne(){
-//        return levelOne;
-//    }
-//    public int getLevelTwo(){
-//        return levelTwo;
-//    }
-    public String getCorrectAnswer(){
+    public String[] getChoices() {
+        return choices;
+    }
+
+    public String getCorrectAnswer() {
         return correctAnswer;
     }
-    public String getQuestionText(){
-        return questionText;
-    }
-    public String getChoiceBxOne(){
-        return choiceBxOne;
-    }
-    public String getChoiceBxTwo(){
-        return choiceBxTwo;
+
+    public String getCategory(){
+        return category;
     }
 
-
-    public void setCorrectAnswer(String correctAnswer){
-        this.correctAnswer=correctAnswer;
-
+    public void setCategory(String category){
+        this.category=category;
     }
-    public void setQuestionText(String questionText){
-        this.questionText=questionText;
 
+    public void setQuestion(String question) {
+        this.question = question;
     }
-    public void setChoiceBxOne(String choiceBxOne){
-        this.choiceBxOne=choiceBxOne;
 
+    public void setChoices(String[] choices) {
+        this.choices = choices;
     }
-    public void setChoiceBxTwo(String choiceBxTwo){
-        this.choiceBxTwo=choiceBxTwo;
 
+    public void setCorrectAnswer(String correctAnswer) {
+        this.correctAnswer = correctAnswer;
     }
+
     @Override
-    public String toString(){
-        return "questionText:"+questionText+"//"+"correct Answer:"+correctAnswer;
+    public String toString() {
+        return "Question{" +
+                "question='" + question + '\'' +
+                ", choices=" + Arrays.toString(choices) +
+                ", correctAnswer='" + correctAnswer + '\'' +
+                ", category='" + category + '\'' +
+                '}';
     }
 }

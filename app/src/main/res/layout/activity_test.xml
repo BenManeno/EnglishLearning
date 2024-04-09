@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="22dp"
-        android:id="@+id/usernameTV"
+        android:id="@+id/practiceTV"
         android:textStyle="bold"
         android:text="Hello name "/>
     <Space
@@ -31,12 +31,13 @@
 
 
     <TextView
+        android:id="@+id/total_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/total_question"
-        android:textStyle="bold"
+        android:text="Total Question : "
         android:textSize="17dp"
-        android:text="Total Question : "/>
+        android:textStyle="bold" />
+
     <Space
         android:layout_width="wrap_content"
         android:layout_height="20dp"/>
@@ -47,10 +48,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/questionText"
+        android:id="@+id/testQuestionText"
         android:textStyle="bold"
         android:textSize="17dp"
-        android:text="I                at school. "
+        android:text="They _____ the movie last night."
        />
 
 
@@ -69,9 +70,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/firstChoiceBTN"
+            android:id="@+id/firstChoiceBox"
             android:backgroundTint="@color/cardview_dark_background"
-            android:text="am"/>
+            android:text="were"/>
         <Space
             android:layout_width="50dp"
             android:layout_height="50dp"/>
@@ -80,8 +81,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
            android:backgroundTint="@color/cardview_dark_background"
-            android:id="@+id/secondChoiceBTN"
-            android:text="is"/>
+            android:id="@+id/secondChoiceBox"
+            android:text="watched "/>
 
 
 

@@ -46,7 +46,7 @@ public class progressActivity extends AppCompatActivity {
 
 
 
-        simplePastProgressBar.setProgress(55);
+        simplePastProgressBar.setProgress(score);
 
         toBeProgress.setProgress(score);
 

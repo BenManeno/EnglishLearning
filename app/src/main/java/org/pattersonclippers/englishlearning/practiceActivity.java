@@ -157,7 +157,7 @@ public class practiceActivity extends AppCompatActivity {
         firstChoiceBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[rightIndex])){
+                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[0])){
                     text=getString(R.string.correctMessage);
                     score=score+1;
 //                    player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
@@ -179,7 +179,7 @@ public class practiceActivity extends AppCompatActivity {
         secondChoiceBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[rightIndex])){
+                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[1])){
                     text="Right";
                     score=score+1;
 

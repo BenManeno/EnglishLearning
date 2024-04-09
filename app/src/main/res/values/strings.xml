@@ -21,12 +21,12 @@
     <string name="NewBox2">may</string>
     <string name="NewBoxText2">are</string>
 
-    <string name="question3Text"> They__ going to the party.</string>
+    <string name="question3Text"> They_____going to the party.</string>
     <string name="correctAnswerBox3">are</string>
     <string name="NewBox3">do</string>
     <string name="NewBoxText3">are</string>
 
-        <string name="question4Text">  She _____ a doctor .</string>
+        <string name="question4Text">  She _____ a doctor.</string>
     <string name="correctAnswerBox4">is</string>
     <string name="NewBox4">not</string>
     <string name="NewBoxText4">is</string>
@@ -42,13 +42,13 @@
     <string name="NewBox6">are</string>
     <string name="NewBoxText6">my</string>
 
-    <string name="question7Text"> He___at the park</string>
+    <string name="question7Text"> He_____at the park.</string>
     <string name="correctAnswerBox7">is</string>
     <string name="NewBox7">are</string>
     <string name="NewBoxText7">is</string>
 
 
-    <string name="question8Text"> He___a great musician</string>
+    <string name="question8Text"> He____a great musician.</string>
     <string name="correctAnswerBox8">is</string>
     <string name="NewBox8">are</string>
     <string name="NewBoxText8">is</string>
@@ -56,7 +56,26 @@
 
     <string name="CategoryTwo">Past tense</string>
 
-    <string name="question1PastT"> They --- the movies </string>
+    <string name="question1PastTest"> They _____ the movie last night. </string>
+    <string name="correctAnswerBox1Test">watched</string>
+    <string name="NewBox1Test">watched</string>
+    <string name="NewBoxText1Test">went</string>
+
+
+    <string name="question2PastTest"> He ______ his homework yesterday. </string>
+    <string name="correctAnswerBox2Test">did</string>
+    <string name="NewBox2Test">was</string>
+    <string name="NewBoxText2Test">did</string>
+
+    <string name="question3PastTest">He _________some milk. </string>
+    <string name="correctAnswerBox3Test">drank</string>
+    <string name="NewBox3Test">drink</string>
+    <string name="NewBoxText3Test">drank</string>
+
+
+
+
+
 
 
 

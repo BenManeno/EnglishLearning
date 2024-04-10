@@ -20,13 +20,13 @@
         android:layout_height="20dp"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/total_question"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:text="Total Question : "/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/total_question"-->
+<!--        android:textSize="25dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:text="Total Question : 1/n"/>-->
 
 
     <TextView
@@ -62,12 +62,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/firstChoiceBox"
+
             android:backgroundTint="@color/cardview_dark_background"
             android:textSize="20dp"
             android:text="What"/>
         <Space
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
+            android:layout_width="100dp"
+            android:layout_height="10dp"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -93,6 +94,13 @@
 
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirdChoice"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="not"/>
     <Space
         android:layout_width="300dp"
         android:layout_height="90dp"

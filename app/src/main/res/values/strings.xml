@@ -6,52 +6,63 @@
     <string name="CategoryOne">To be</string>
 
 
-    <string name="question1Text">    time did you wake up?</string>
+    <string name="question1Text"> ______time did you wake up?</string>
     <string name="firstChoiceBox">What</string>
     <string name="secondChoiceBox">Who</string>
+    <string name="thirdChoice">not</string>
+
     <string name="correctMessage">Right</string>
     <string name="WrongMsg">Wrong</string>
     <string name="correctAnswerBox1">What</string>
     <string name="NewBox1">What</string>
     <string name="NewBoxText1">who</string>
+    <string name="TNewBoxText1Practice">Who</string>
 
 
     <string name="question2Text"> Your __ very kind.</string>
     <string name="correctAnswerBox2">are</string>
     <string name="NewBox2">may</string>
     <string name="NewBoxText2">are</string>
+    <string name="TNewBoxText2Practice">Who</string>
 
     <string name="question3Text"> They_____going to the party.</string>
     <string name="correctAnswerBox3">are</string>
     <string name="NewBox3">do</string>
     <string name="NewBoxText3">are</string>
+    <string name="TNewBoxText3Practice">Who</string>
 
         <string name="question4Text">  She _____ a doctor.</string>
     <string name="correctAnswerBox4">is</string>
     <string name="NewBox4">not</string>
     <string name="NewBoxText4">is</string>
+    <string name="TNewBoxText4Practice"> s </string>
 
 
     <string name="question5Text">  I _____a student.</string>
     <string name="correctAnswerBox5">am</string>
     <string name="NewBox5">are</string>
+    <string name="TNewBoxText5Practice">no</string>
     <string name="NewBoxText5">am</string>
+
 
     <string name="question6Text">  You _____ my best friend.</string>
     <string name="correctAnswerBox6">are</string>
     <string name="NewBox6">are</string>
+    <string name="TNewBoxText6Practice">not</string>
     <string name="NewBoxText6">my</string>
 
     <string name="question7Text"> He_____at the park.</string>
     <string name="correctAnswerBox7">is</string>
     <string name="NewBox7">are</string>
     <string name="NewBoxText7">is</string>
+    <string name="TNewBoxText7Practice">not</string>
 
 
     <string name="question8Text"> He____a great musician.</string>
     <string name="correctAnswerBox8">is</string>
     <string name="NewBox8">are</string>
     <string name="NewBoxText8">is</string>
+    <string name="TNewBoxText8Practice">may</string>
 
 
     <string name="CategoryTwo">Past tense</string>
@@ -60,17 +71,36 @@
     <string name="correctAnswerBox1Test">watched</string>
     <string name="NewBox1Test">watched</string>
     <string name="NewBoxText1Test">went</string>
+    <string name="TNewBoxText1Test">Who</string>
 
 
     <string name="question2PastTest"> He ______ his homework yesterday. </string>
     <string name="correctAnswerBox2Test">did</string>
     <string name="NewBox2Test">was</string>
     <string name="NewBoxText2Test">did</string>
+    <string name="TNewBoxText2Test">Who</string>
 
     <string name="question3PastTest">He _________some milk. </string>
     <string name="correctAnswerBox3Test">drank</string>
     <string name="NewBox3Test">drink</string>
     <string name="NewBoxText3Test">drank</string>
+    <string name="TNewBoxText3Test">Who</string>
+
+
+
+    <string name="question4PastTest">He _________goodbye.</string>
+    <string name="correctAnswerBox4Test">said</string>
+    <string name="NewBox4Test">said</string>
+    <string name="NewBoxText4Test">say</string>
+    <string name="TNewBoxText4Test">saying</string>
+
+    <string name="question5PastTest">Mrs. Marta . . . to Yogyakarta with my uncle few days ago.</string>
+    <string name="correctAnswerBox5Test">went</string>
+    <string name="NewBox5Test">goes</string>
+    <string name="NewBoxText5Test">went</string>
+    <string name="TNewBoxText5Test">went</string>
+
+
 
 
 

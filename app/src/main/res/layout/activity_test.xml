@@ -30,13 +30,13 @@
         android:layout_height="90dp"/>
 
 
-    <TextView
-        android:id="@+id/total_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total Question : "
-        android:textSize="17dp"
-        android:textStyle="bold" />
+<!--    <TextView-->
+<!--        android:id="@+id/total_question"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Total Question : "-->
+<!--        android:textSize="17dp"-->
+<!--        android:textStyle="bold" />-->
 
     <Space
         android:layout_width="wrap_content"
@@ -87,10 +87,19 @@
 
 
 
+
+
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirdChoice"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="not"/>
     <Space
         android:layout_width="wrap_content"
         android:layout_height="100dp"/>
+
 
     <Button
         android:layout_width="wrap_content"

@@ -53,7 +53,7 @@ public class testActivity extends AppCompatActivity {
         nextBTN=(Button) findViewById(R.id.nextBTN);
         testQuestionText=(TextView)findViewById(R.id.testQuestionText);
         practiceTV=(TextView)findViewById(R.id.practiceTV);
-//        thirdChoice=(Button)findViewById(R.id.thirdChoice);
+     thirdChoice=(Button)findViewById(R.id.thirdChoice);
         backgroundColors=(LinearLayout) findViewById(R.id.backgroundColors);
 
         score=0;
@@ -87,19 +87,17 @@ public class testActivity extends AppCompatActivity {
 
 
 
-        question1=new Question(getString(R.string.question1PastTest),new String[]{getString(R.string.NewBoxText1Test),getString(R.string.NewBox1Test)},getString(R.string.correctAnswerBox1Test),getString(R.string.CategoryTwo));
-        question2=new Question(getString(R.string.question2PastTest),new String[]{getString(R.string.NewBoxText2Test),getString(R.string.NewBox2Test)},getString(R.string.correctAnswerBox2Test),getString(R.string.CategoryTwo));
-        question3=new Question(getString(R.string.question3PastTest),new String[]{getString(R.string.NewBoxText3Test),getString(R.string.NewBox3Test)},getString(R.string.correctAnswerBox3Test),getString(R.string.CategoryTwo));
-        question4=new Question(getString(R.string.question4PastTest),new String[]{getString(R.string.NewBoxText4Test),getString(R.string.NewBox4Test)},getString(R.string.correctAnswerBox4Test),getString(R.string.CategoryTwo));
-        question5=new Question(getString(R.string.question5PastTest),new String[]{getString(R.string.NewBoxText5Test),getString(R.string.NewBox5Test)},getString(R.string.correctAnswerBox5Test),getString(R.string.CategoryTwo));
-        question6=new Question(getString(R.string.question6Text),new String[]{getString(R.string.NewBox6),getString(R.string.NewBoxText6)},getString(R.string.correctAnswerBox6),getString(R.string.CategoryOne));
-        question7=new Question(getString(R.string.question7Text),new String[]{getString(R.string.NewBox7),getString(R.string.NewBoxText7)},getString(R.string.correctAnswerBox7),getString(R.string.CategoryOne));
-        question8=new Question(getString(R.string.question8Text),new String[]{getString(R.string.NewBox8),getString(R.string.NewBoxText8)},getString(R.string.correctAnswerBox8),getString(R.string.CategoryOne));
+        question1=new Question(getString(R.string.question1PastTest),new String[]{getString(R.string.NewBoxText1Test),getString(R.string.NewBox1Test),getString(R.string.TNewBoxText1Test)},getString(R.string.correctAnswerBox1Test),getString(R.string.CategoryTwo));
+        question2=new Question(getString(R.string.question2PastTest),new String[]{getString(R.string.NewBoxText2Test),getString(R.string.NewBox2Test),getString(R.string.TNewBoxText2Test)},getString(R.string.correctAnswerBox2Test),getString(R.string.CategoryTwo));
+        question3=new Question(getString(R.string.question3PastTest),new String[]{getString(R.string.NewBoxText3Test),getString(R.string.NewBox3Test),getString(R.string.TNewBoxText3Test)},getString(R.string.correctAnswerBox3Test),getString(R.string.CategoryTwo));
+        question4=new Question(getString(R.string.question4PastTest),new String[]{getString(R.string.NewBoxText4Test),getString(R.string.NewBox4Test),getString(R.string.TNewBoxText4Test)},getString(R.string.correctAnswerBox4Test),getString(R.string.CategoryTwo));
+        question5=new Question(getString(R.string.question5PastTest),new String[]{getString(R.string.NewBoxText5Test),getString(R.string.NewBox5Test),getString(R.string.TNewBoxText5Test)},getString(R.string.correctAnswerBox5Test),getString(R.string.CategoryTwo));
+
 
         // create question 1D array
 
 
-        questions=new Question[]{question1,question2,question3,question4,question5,question6,question7,question8};
+        questions=new Question[]{question1,question2,question3,question4,question5};
 
 
         rightIndex=0;
@@ -122,6 +120,7 @@ public class testActivity extends AppCompatActivity {
                     testQuestionText.setText(currentQuestion.getQuestion());
                     firstChoiceBox.setText(currentQuestion.getChoices()[0]);
                     secondChoiceBox.setText(currentQuestion.getChoices()[1]);
+                    thirdChoice.setText(currentQuestion.getChoices()[2]);
 
                 }
                 else{
@@ -185,6 +184,27 @@ public class testActivity extends AppCompatActivity {
 //                    player.start();
                 }
                 int duration=Toast.LENGTH_SHORT;
+                Toast t =Toast.makeText(getApplicationContext(),text,duration);
+                t.show();
+
+            }
+        });
+        thirdChoice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[0])){
+                    text=getString(R.string.correctMessage);
+                    score=score+1;
+//                    player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
+//                    player.start();
+                }else{
+                    text=getString(R.string.WrongMsg);
+//                    player=MediaPlayer.create(practiceActivity.this,R.raw.wrong);
+//                    player.start();
+                }
+                //show the text for right or wrong answer
+
+                int duration = Toast.LENGTH_SHORT;
                 Toast t =Toast.makeText(getApplicationContext(),text,duration);
                 t.show();
 

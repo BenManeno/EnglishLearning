@@ -31,7 +31,7 @@
     <string name="NewBoxText3">are</string>
     <string name="TNewBoxText3Practice">Who</string>
 
-        <string name="question4Text">  She _____ a doctor.</string>
+    <string name="question4Text">  She _____ a doctor.</string>
     <string name="correctAnswerBox4">is</string>
     <string name="NewBox4">not</string>
     <string name="NewBoxText4">is</string>
@@ -87,7 +87,6 @@
     <string name="TNewBoxText3Test">Who</string>
 
 
-
     <string name="question4PastTest">He _________goodbye.</string>
     <string name="correctAnswerBox4Test">said</string>
     <string name="NewBox4Test">said</string>
@@ -99,26 +98,6 @@
     <string name="NewBox5Test">goes</string>
     <string name="NewBoxText5Test">went</string>
     <string name="TNewBoxText5Test">went</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </resources>

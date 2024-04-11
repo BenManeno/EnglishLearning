@@ -151,12 +151,12 @@ public class testActivity extends AppCompatActivity {
                 if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[0])){
                     text=getString(R.string.correctMessage);
                     score=score+1;
-//                    player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
-//                    player.start();
+                    player=MediaPlayer.create(testActivity.this,R.raw.correct);
+                    player.start();
                 }else{
                     text=getString(R.string.WrongMsg);
-//                    player=MediaPlayer.create(practiceActivity.this,R.raw.wrong);
-//                    player.start();
+                    player=MediaPlayer.create(testActivity.this,R.raw.wrong);
+                    player.start();
                 }
                 //show the text for right or wrong answer
 
@@ -174,8 +174,8 @@ public class testActivity extends AppCompatActivity {
                     text="Right";
                     score=score+1;
 
-//                    player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
-//                    player.start();
+                    player=MediaPlayer.create(testActivity.this,R.raw.correct);
+                    player.start();
                 }
                 else{
                     text="Wrong";
@@ -195,12 +195,12 @@ public class testActivity extends AppCompatActivity {
                 if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[0])){
                     text=getString(R.string.correctMessage);
                     score=score+1;
-//                    player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
-//                    player.start();
+                    player=MediaPlayer.create(testActivity.this,R.raw.correct);
+                    player.start();
                 }else{
                     text=getString(R.string.WrongMsg);
-//                    player=MediaPlayer.create(practiceActivity.this,R.raw.wrong);
-//                    player.start();
+                    player=MediaPlayer.create(testActivity.this,R.raw.wrong);
+                    player.start();
                 }
                 //show the text for right or wrong answer
 

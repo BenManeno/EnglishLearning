@@ -15,20 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="top">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="PRACTICE"/>
-
-
-
-
-
-
-</LinearLayout>
+            android:gravity="top"/>
 
         <Space
             android:layout_width="wrap_content"

@@ -38,21 +38,19 @@
 <!--        android:textSize="17dp"-->
 <!--        android:textStyle="bold" />-->
 
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"/>
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"/>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/testQuestionText"
         android:textStyle="bold"
-        android:textSize="17dp"
+        android:textSize="25dp"
         android:text="They _____ the movie last night."
        />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
 
 
 

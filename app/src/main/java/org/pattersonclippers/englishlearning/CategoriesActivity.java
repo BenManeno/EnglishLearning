@@ -69,7 +69,7 @@ public class CategoriesActivity extends AppCompatActivity {
         practiceBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(CategoriesActivity.this,practiceActivity.class);
+                Intent intent =new Intent(CategoriesActivity.this,TopicActivity.class);
                 startActivity(intent);
             }
         });
@@ -77,7 +77,7 @@ public class CategoriesActivity extends AppCompatActivity {
         testBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(CategoriesActivity.this,testActivity.class);
+                Intent intent =new Intent(CategoriesActivity.this,TopicActivity.class);
                 startActivity(intent);
             }
         });

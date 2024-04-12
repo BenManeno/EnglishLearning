@@ -10,6 +10,7 @@ public class Question {
     private String question;
 
     private String[] choices;
+//    private String hintWeb;
 
    private  String correctAnswer;
 
@@ -28,6 +29,10 @@ public class Question {
         correctAnswer="is";
         category="unknown";
     }
+
+//    public String getHintWeb() {
+//        return hintWeb;
+//    }
 
     public String getQuestion() {
         return question;
@@ -60,6 +65,10 @@ public class Question {
     public void setCorrectAnswer(String correctAnswer) {
         this.correctAnswer = correctAnswer;
     }
+
+//    public void setHintWeb(String hintWeb) {
+//        this.hintWeb = hintWeb;
+//    }
 
     @Override
     public String toString() {

@@ -22,7 +22,7 @@
             android:layout_height="200dp"/>
 
         <TextView
-            android:id="@+id/tobeTV"
+            android:id="@+id/tobePercentTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
@@ -58,7 +58,7 @@
             />
 
         <TextView
-            android:id="@+id/simplePastTV"
+            android:id="@+id/simplePastPercentTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"

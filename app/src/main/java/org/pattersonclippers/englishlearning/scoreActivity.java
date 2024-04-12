@@ -41,7 +41,7 @@ public class scoreActivity extends AppCompatActivity {
         score =myPreferences.getInt(SCORE,0);
 
         name= myPreferences.getString(Name_Key,"");
-        greetingUser = "Hello  " + name +" Welcome to English Learning App ";
+        greetingUser = "Hello  " + name +" Your doing amazing work ";
         greetingTV.setText(greetingUser);
 
 

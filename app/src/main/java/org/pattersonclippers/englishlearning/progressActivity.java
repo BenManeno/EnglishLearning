@@ -20,8 +20,9 @@ public class progressActivity extends AppCompatActivity {
     private int score;
     ProgressBar toBeProgress,simplePastProgressBar;
     private SharedPreferences myPreferences;
-    TextView simplePastTV, tobeTV;
+    TextView simplePastPercentTV, tobePercentTV;
     Button exitBTN;
+;
 
     ScoreObject scoreObject;
 
@@ -39,6 +40,8 @@ public class progressActivity extends AppCompatActivity {
         toBeProgress=(ProgressBar) findViewById(R.id.tobeProgressBar);
         simplePastProgressBar=(ProgressBar) findViewById(R.id.simplePastProgressBar);
         exitBTN=(Button)findViewById(R.id.exitBTN);
+//        tobePercentTV=(TextView) findViewById(R.id.tobePercentTV);
+//        simplePastPercentTV=(TextView) findViewById(R.id.simplePastPercentTV);
 
         myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
 
@@ -48,7 +51,11 @@ public class progressActivity extends AppCompatActivity {
 
         simplePastProgressBar.setProgress(99);
 
+
+
         toBeProgress.setProgress(score);
+        //tobePercentTV.setText(score);
+       // simplePastPercentTV.setText(score);
 
 
         exitBTN.setOnClickListener(new View.OnClickListener() {

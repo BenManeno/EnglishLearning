@@ -26,7 +26,9 @@ public class testActivity extends AppCompatActivity {
     MediaPlayer player;
 
 
-    Question question1,question2,question3,question4,question5,question6,question7,question8,currentQuestion;
+    Question question1,question2,question3,question4,question5,
+            question6,question7,question8,question9,question10,
+            currentQuestion;
     Question[]questions;
 
 
@@ -92,12 +94,12 @@ public class testActivity extends AppCompatActivity {
         question3=new Question(getString(R.string.question3PastTest),new String[]{getString(R.string.NewBoxText3Test),getString(R.string.NewBox3Test),getString(R.string.TNewBoxText3Test)},getString(R.string.correctAnswerBox3Test),getString(R.string.CategoryTwo));
         question4=new Question(getString(R.string.question4PastTest),new String[]{getString(R.string.NewBoxText4Test),getString(R.string.NewBox4Test),getString(R.string.TNewBoxText4Test)},getString(R.string.correctAnswerBox4Test),getString(R.string.CategoryTwo));
         question5=new Question(getString(R.string.question5PastTest),new String[]{getString(R.string.NewBoxText5Test),getString(R.string.NewBox5Test),getString(R.string.TNewBoxText5Test)},getString(R.string.correctAnswerBox5Test),getString(R.string.CategoryTwo));
-
-
+        question6=new Question(getString(R.string.question6Text),new String[]{getString(R.string.NewBox6),getString(R.string.NewBoxText6),getString(R.string.TNewBoxText6Practice)},getString(R.string.correctAnswerBox6),getString(R.string.CategoryOne));
         // create question 1D array
 
 
-        questions=new Question[]{question1,question2,question3,question4,question5};
+        questions=new Question[]{question1,question2,question3,question4,
+                question5,question6};
 
 
         rightIndex=0;

@@ -19,7 +19,7 @@
     <string name="TNewBoxText1Practice">Who</string>
 
 
-    <string name="question2Text"> Your _____very kind.</string>
+    <string name="question2Text"> You _____very kind.</string>
     <string name="correctAnswerBox2">are</string>
     <string name="NewBox2">are</string>
     <string name="NewBoxText2">may</string>
@@ -64,6 +64,7 @@
     <string name="NewBoxText8">is</string>
     <string name="TNewBoxText8Practice">is not </string>
 
+//
 
     <string name="CategoryTwo">Past tense</string>
 
@@ -93,11 +94,49 @@
     <string name="NewBoxText4Test">say</string>
     <string name="TNewBoxText4Test">saying</string>
 
-    <string name="question5PastTest">Mrs. Marta . . . to Yogyakarta with my uncle few days ago.</string>
+    <string name="question5PastTest">My mom  . . . to dubai with my uncle few days ago.</string>
     <string name="correctAnswerBox5Test">went</string>
     <string name="NewBox5Test">goes</string>
     <string name="NewBoxText5Test">went</string>
     <string name="TNewBoxText5Test">went</string>
+
+
+    <string name="question6PastTest">He _________goodbye.</string>
+    <string name="correctAnswerBox6Test">said</string>
+    <string name="NewBox6Test">said</string>
+    <string name="NewBoxText6Test">say</string>
+    <string name="TNewBoxText6Test">saying</string>
+
+///
+    <string name="question7PastTest">He ______ TV most evening.</string>
+    <string name="correctAnswerBox7Test">watches</string>
+    <string name="NewBox7Test">is watch</string>
+    <string name="NewBoxText7Test">is watching</string>
+    <string name="TNewBoxText7Test">watches</string>
+
+
+    <string name="question8PastTest">The baby _______ all morning. </string>
+    <string name="correctAnswerBox8Test"> has been crying</string>
+    <string name="NewBox8Test">cries</string>
+    <string name="NewBoxText8Test">has been crying</string>
+    <string name="TNewBoxText8Test">cry</string>
+
+
+    <string name="question9PastTest"> How many cups of tea_____ yesterday? </string>
+    <string name="correctAnswerBox9Test">Did you drink</string>
+    <string name="NewBox9Test">You have drank</string>
+    <string name="NewBoxText9Test">Did you drink</string>
+    <string name="TNewBoxText9Test">Do you drink</string>
+
+
+
+
+    <string name="question10PastTest">I____from college three years ago</string>
+    <string name="correctAnswerBox10Test">graduated</string>
+    <string name="NewBox10Test">graduated</string>
+    <string name="NewBoxText10Test">moved</string>
+    <string name="TNewBoxText10Test">graduate</string>
+//
 
 
 </resources>

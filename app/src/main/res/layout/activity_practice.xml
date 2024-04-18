@@ -44,7 +44,7 @@
         android:textSize="25dp"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="@string/question1Text"
+        android:text=""
 
         />
 
@@ -65,7 +65,7 @@
 
             android:backgroundTint="@color/cardview_dark_background"
             android:textSize="20dp"
-            android:text="What"/>
+            android:text=""/>
         <Space
             android:layout_width="100dp"
             android:layout_height="10dp"/>
@@ -76,7 +76,7 @@
             android:id="@+id/secondChoiceBox"
             android:textSize="20dp"
             android:backgroundTint="@color/cardview_dark_background"
-            android:text="When"/>
+            android:text=""/>
 
 <!--        <Space-->
 <!--            android:layout_width="50dp"-->
@@ -100,7 +100,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/thirdChoice"
         android:backgroundTint="@color/cardview_dark_background"
-        android:text="not"/>
+        android:text=""/>
     <Space
         android:layout_width="300dp"
         android:layout_height="90dp"

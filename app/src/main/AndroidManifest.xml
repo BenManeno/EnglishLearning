@@ -13,10 +13,10 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="34">
         <activity
-            android:name=".HintActivity"
+            android:name=".TopicActivity"
             android:exported="false" />
         <activity
-            android:name=".TopicActivity"
+            android:name=".HintActivity"
             android:exported="false" />
         <activity
             android:name=".TestProgressActivity"

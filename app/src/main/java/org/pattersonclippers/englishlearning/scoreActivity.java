@@ -20,6 +20,8 @@ public class scoreActivity extends AppCompatActivity {
     private final String Name_Key="name";
     private final String COLOR_KEY="colors";
     private final String SCORE = "Score";
+    private final String TOBE_SCORE_KEY = "tobeScore";
+    private final String PAST_TENSE_SCORE_KEY = "pastTenseScore";
     LinearLayout backgroundColors;
     String greetingUser;
     String name;
@@ -39,6 +41,9 @@ public class scoreActivity extends AppCompatActivity {
         myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
 
         score =myPreferences.getInt(SCORE,0);
+        //score for to be and past tense
+        score=myPreferences.getInt(TOBE_SCORE_KEY,0);
+        score=myPreferences.getInt(PAST_TENSE_SCORE_KEY,0);
 
         name= myPreferences.getString(Name_Key,"");
         greetingUser = "Hello  " + name +" Your doing amazing work ";

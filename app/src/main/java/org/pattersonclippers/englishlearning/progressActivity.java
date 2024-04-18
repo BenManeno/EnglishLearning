@@ -17,17 +17,21 @@ public class progressActivity extends AppCompatActivity {
     private String fileName= "org.pattersonclippers.EnglishLearning.App";
 
     private final String SCORE = "Score";
+
+    private final String TOBE_SCORE_KEY = "tobeScore";
+    private final String PAST_TENSE_SCORE_KEY = "pastTenseScore";
+
     private int score;
+    private int tobeScore;
+    private int pastTenseScore;
     ProgressBar toBeProgress,simplePastProgressBar;
     private SharedPreferences myPreferences;
     TextView simplePastPercentTV, tobePercentTV;
     Button exitBTN;
 ;
 
-    ScoreObject scoreObject;
 
-    CategoriesObject tobe ,pastTense,simplePAst;
-    CategoriesObject[] categoriesNames;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,20 +44,25 @@ public class progressActivity extends AppCompatActivity {
         toBeProgress=(ProgressBar) findViewById(R.id.tobeProgressBar);
         simplePastProgressBar=(ProgressBar) findViewById(R.id.simplePastProgressBar);
         exitBTN=(Button)findViewById(R.id.exitBTN);
-//        tobePercentTV=(TextView) findViewById(R.id.tobePercentTV);
-//        simplePastPercentTV=(TextView) findViewById(R.id.simplePastPercentTV);
+        tobePercentTV=(TextView) findViewById(R.id.tobePercentTV);
+        simplePastPercentTV=(TextView) findViewById(R.id.simplePastPercentTV);
 
         myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
 
         score =myPreferences.getInt(SCORE,MODE_PRIVATE);
 
+        tobeScore =myPreferences.getInt(TOBE_SCORE_KEY,MODE_PRIVATE);
+        pastTenseScore =myPreferences.getInt(PAST_TENSE_SCORE_KEY,MODE_PRIVATE);
 
 
-        simplePastProgressBar.setProgress(99);
+
+        simplePastProgressBar.setProgress(pastTenseScore);
+        simplePastPercentTV.setText(pastTenseScore);
+        //
+        toBeProgress.setProgress(tobeScore);
+        tobePercentTV.setText(tobeScore);
 
 
-
-        toBeProgress.setProgress(score);
         //tobePercentTV.setText(score);
        // simplePastPercentTV.setText(score);
 

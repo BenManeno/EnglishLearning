@@ -22,12 +22,16 @@ public class practiceActivity extends AppCompatActivity {
     private final String COLOR_KEY="colors";
     SharedPreferences.Editor preferencesEditor;
     private final String SCORE_KEY = "Score";
+    private final String categoryKey="category";
     final String TAG ="HHHH";
     LinearLayout backgroundColors;
     MediaPlayer player;
 
 
-    Question question1,question2,question3,question4,question5,question6,question7,question8,currentQuestion;
+    Question question1,question2,question3,question4,question5,
+            question6,question7,question8,
+            question9,question10,question11,question12,question13,
+            currentQuestion;
     Question[]questions;
 
 
@@ -42,6 +46,7 @@ public class practiceActivity extends AppCompatActivity {
     int score;
     int percentScore;
     int rightIndex;
+    String category;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +64,13 @@ public class practiceActivity extends AppCompatActivity {
        // total_question=(TextView)findViewById(R.id.total_question);
 
         score=0;
+
+
+
+        Intent myIntent = getIntent();
+        category= myIntent.getStringExtra(categoryKey);
+
+
 
         myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
         preferencesEditor = myPreferences.edit();
@@ -99,16 +111,31 @@ public class practiceActivity extends AppCompatActivity {
         question6=new Question(getString(R.string.question6Text),new String[]{getString(R.string.NewBox6),getString(R.string.NewBoxText6),getString(R.string.TNewBoxText6Practice)},getString(R.string.correctAnswerBox6),getString(R.string.CategoryOne));
         question7=new Question(getString(R.string.question7Text),new String[]{getString(R.string.NewBox7),getString(R.string.NewBoxText7),getString(R.string.TNewBoxText7Practice)},getString(R.string.correctAnswerBox7),getString(R.string.CategoryOne));
         question8=new Question(getString(R.string.question8Text),new String[]{getString(R.string.NewBox8),getString(R.string.NewBoxText8),getString(R.string.TNewBoxText8Practice)},getString(R.string.correctAnswerBox8),getString(R.string.CategoryOne));
+        question9=new Question(getString(R.string.question6PastTest),new String[]{getString(R.string.NewBoxText6Test),getString(R.string.NewBox6Test),getString(R.string.TNewBoxText6Test)},getString(R.string.correctAnswerBox6Test),getString(R.string.CategoryTwo));
+        question10=new Question(getString(R.string.question7PastTest),new String[]{getString(R.string.NewBoxText7Test),getString(R.string.NewBox7Test),getString(R.string.TNewBoxText7Test)},getString(R.string.correctAnswerBox7Test),getString(R.string.CategoryTwo));
+        question11=new Question(getString(R.string.question8PastTest),new String[]{getString(R.string.NewBoxText8Test),getString(R.string.NewBox8Test),getString(R.string.TNewBoxText8Test)},getString(R.string.correctAnswerBox8Test),getString(R.string.CategoryTwo));
+        question12=new Question(getString(R.string.question9PastTest),new String[]{getString(R.string.NewBoxText9Test),getString(R.string.NewBox9Test),getString(R.string.TNewBoxText9Test)},getString(R.string.correctAnswerBox9Test),getString(R.string.CategoryTwo));
+        question13=new Question(getString(R.string.question10PastTest),new String[]{getString(R.string.NewBoxText10Test),getString(R.string.NewBox10Test),getString(R.string.TNewBoxText10Test)},getString(R.string.correctAnswerBox10Test),getString(R.string.CategoryTwo));
 
         // create question 1D array
 
 
-        questions=new Question[]{question1,question2,question3,question4,question5,question6,question7,question8};
+        questions=new Question[]{question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13};
 
 
         rightIndex=0;
 
         currentQuestion=questions[rightIndex];
+
+        while(!currentQuestion.getCategory().equals(category)){
+            rightIndex++;
+            currentQuestion=questions[rightIndex];
+        }
+
+        practiceQTV.setText(currentQuestion.getQuestion());
+        firstChoiceBox.setText(currentQuestion.getChoices()[0]);
+        secondChoiceBox.setText(currentQuestion.getChoices()[1]);
+        thirdChoice.setText(currentQuestion.getChoices()[2]);
 
         text="";
 
@@ -122,8 +149,14 @@ public class practiceActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(rightIndex<questions.length-1){
                     rightIndex++;
-                    Log.d(TAG,rightIndex+"");
                     currentQuestion=questions[rightIndex];
+                    Log.d(TAG,rightIndex+"");
+
+                    while(!currentQuestion.getCategory().equals(category)){
+                        rightIndex++;
+                        currentQuestion=questions[rightIndex];
+                    }
+
 
                     Log.d(TAG,currentQuestion.toString());
 

@@ -35,7 +35,7 @@ public class CategoriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
 
-        Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.skyblue)));
+        //Objects.requireNonNull(getSupportActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.skyblue)));
 
        testBTN=(Button) findViewById(R.id.testBTN);
         practiceBTN=(Button) findViewById(R.id.practiceBTN);

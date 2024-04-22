@@ -147,23 +147,31 @@ public class practiceActivity extends AppCompatActivity {
         nextBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 if(rightIndex<questions.length-1){
                     rightIndex++;
                     currentQuestion=questions[rightIndex];
                     Log.d(TAG,rightIndex+"");
 
-                    while(!currentQuestion.getCategory().equals(category)){
+                    while(!currentQuestion.getCategory().equals(category) && rightIndex<questions.length-1){
                         rightIndex++;
                         currentQuestion=questions[rightIndex];
+
+                    }
+                    if(currentQuestion.getCategory().equals(category)){
+                        Log.d(TAG,currentQuestion.toString());
+
+                        practiceQTV.setText(currentQuestion.getQuestion());
+                        firstChoiceBox.setText(currentQuestion.getChoices()[0]);
+                        secondChoiceBox.setText(currentQuestion.getChoices()[1]);
+                        thirdChoice.setText(currentQuestion.getChoices()[2]);
                     }
 
 
-                    Log.d(TAG,currentQuestion.toString());
 
-                    practiceQTV.setText(currentQuestion.getQuestion());
-                    firstChoiceBox.setText(currentQuestion.getChoices()[0]);
-                    secondChoiceBox.setText(currentQuestion.getChoices()[1]);
-                    thirdChoice.setText(currentQuestion.getChoices()[2]);
+
+
 
                 }
                 else{

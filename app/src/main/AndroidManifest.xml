@@ -16,20 +16,14 @@
             android:name=".TopicActivity"
             android:exported="false" />
         <activity
-            android:name=".HintActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TestProgressActivity"
-            android:exported="false" />
-        <activity
             android:name=".testActivity"
             android:exported="false" />
         <activity
             android:name=".progressActivity"
             android:exported="false" />
-        <activity
-            android:name=".progressBar"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".progressBar"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".scoreActivity"
             android:exported="false" />

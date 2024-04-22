@@ -64,7 +64,7 @@
     <string name="NewBoxText8">is</string>
     <string name="TNewBoxText8Practice">is not </string>
 
-//
+/// category two
 
     <string name="CategoryTwo">Past tense</string>
 
@@ -136,7 +136,6 @@
     <string name="NewBox10Test">graduated</string>
     <string name="NewBoxText10Test">moved</string>
     <string name="TNewBoxText10Test">graduate</string>
-//
 
 
 </resources>

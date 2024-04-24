@@ -64,7 +64,7 @@
     <string name="NewBoxText8">is</string>
     <string name="TNewBoxText8Practice">is not </string>
 
-/// category two
+    /// category two
 
     <string name="CategoryTwo">Past tense</string>
 
@@ -107,7 +107,7 @@
     <string name="NewBoxText6Test">say</string>
     <string name="TNewBoxText6Test">saying</string>
 
-///
+    ///
     <string name="question7PastTest">He ______ TV most evening.</string>
     <string name="correctAnswerBox7Test">watches</string>
     <string name="NewBox7Test">is watch</string>
@@ -127,8 +127,6 @@
     <string name="NewBox9Test">You have drank</string>
     <string name="NewBoxText9Test">Did you drink</string>
     <string name="TNewBoxText9Test">Do you drink</string>
-
-
 
 
     <string name="question10PastTest">I____from college three years ago</string>

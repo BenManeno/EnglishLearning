@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EnglishLearning"
         tools:targetApi="34">
         <activity
+            android:name=".TestScoreActivity"
+            android:exported="false" />
+        <activity
             android:name=".TopicActivity"
             android:exported="false" />
         <activity
@@ -20,10 +23,9 @@
             android:exported="false" />
         <activity
             android:name=".progressActivity"
-            android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".progressBar"-->
-<!--            android:exported="false" />-->
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".progressBar" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".scoreActivity"
             android:exported="false" />

@@ -48,10 +48,8 @@ public class multScoreObject {
 
     @Override
     public String toString() {
-        return "multiScoreObject{" +
-                "score=" + score +
-                ", wrongAnswers=" + wrongAnswers +
-                ", feedBack='" + feedBack + '\'' +
-                '}';
+        return "[score=" + score + "%" + "\n"+
+                ", WrongAnswers=" + wrongAnswers + "\n"+
+                ", feedBack='" + feedBack + '\'' + "]";
     }
 }

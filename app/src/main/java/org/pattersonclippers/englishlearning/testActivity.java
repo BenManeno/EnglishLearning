@@ -23,6 +23,7 @@ public class testActivity extends AppCompatActivity {
     private final String COLOR_KEY="colors";
     SharedPreferences.Editor preferencesEditor;
     private final String SCORE_KEY = "Score";
+    private final String MULTI_KEY="multi";
     final String TAG ="HHHH";
     LinearLayout backgroundColors;
     MediaPlayer player;
@@ -134,17 +135,40 @@ public class testActivity extends AppCompatActivity {
                 }
                 else{
 
-                    Intent myIntent=new Intent(testActivity.this,scoreActivity.class);
+                    Intent myIntent=new Intent(testActivity.this,TestScoreActivity.class);
                     Log.d(TAG,myIntent.toString());
+
+
 
                     percentScore=score*100/questions.length;
 
+                    if(percentScore<50){
+                        feedback="keep study" ;
+
+                    } else if (percentScore<80) {
+                        feedback="Almost there keep going ";
+
+                    }
+                    else {
+                       feedback="Great ,you doing amazing";
+                    }
+
                     Log.d(TAG, String.valueOf(score));
 
-                    preferencesEditor.putInt(SCORE_KEY,percentScore);
-                    preferencesEditor.apply();
+
+
                     //create multiObject after make the feedback  if and  else
+
+                    multScoreObject multScoreObjects = new multScoreObject(percentScore,feedback,wrongAnswer);
+
+                    Log.d(TAG,multScoreObjects.toString());
+
+                    preferencesEditor.putInt(SCORE_KEY,percentScore);
+                    preferencesEditor.putString(MULTI_KEY,multScoreObjects.toString());
+                    preferencesEditor.apply();
+
 //                    myIntent.putExtra("Score",score);
+
                     startActivity(myIntent);
                 }
 
@@ -159,13 +183,11 @@ public class testActivity extends AppCompatActivity {
                 if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[0])){
                     text=getString(R.string.correctMessage);
                     score=score+1;
-                    if(score<50){
-                        
-                    }
+
                     player=MediaPlayer.create(testActivity.this,R.raw.correct);
                     player.start();
                 }else{
-                    String wrongMessage = currentQuestion.getQuestion()+"This is what Your choose"+ currentQuestion.getChoices()[0];
+                    String wrongMessage = currentQuestion.getQuestion()+"This is what Your choose "+ currentQuestion.getChoices()[0];
                     wrongAnswer.add(wrongMessage);
 
                     text=getString(R.string.WrongMsg);
@@ -192,6 +214,8 @@ public class testActivity extends AppCompatActivity {
                     player.start();
                 }
                 else{
+                    String wrongMessage = currentQuestion.getQuestion()+"This is what Your choose ["+ currentQuestion.getChoices()[1];
+                    wrongAnswer.add(wrongMessage);
                     text="Wrong";
 
 //                    player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
@@ -212,6 +236,8 @@ public class testActivity extends AppCompatActivity {
                     player=MediaPlayer.create(testActivity.this,R.raw.correct);
                     player.start();
                 }else{
+                    String wrongMessage = currentQuestion.getQuestion()+"This is what Your choose ["+ currentQuestion.getChoices()[2] +"]";
+                    wrongAnswer.add(wrongMessage);
                     text=getString(R.string.WrongMsg);
                     player=MediaPlayer.create(testActivity.this,R.raw.wrong);
                     player.start();

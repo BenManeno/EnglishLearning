@@ -42,8 +42,9 @@
         android:layout_marginTop="70dp"
         android:id="@+id/practiceQTV"
         android:textSize="25dp"
+
         android:layout_height="wrap_content"
-        android:textStyle="bold"
+       android:textStyle="italic"
         android:text=""
 
         />
@@ -63,8 +64,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/firstChoiceBox"
 
-            android:backgroundTint="@color/cardview_dark_background"
-            android:textSize="20dp"
+            android:backgroundTint="@color/black"
+            android:textSize="15dp"
             android:text=""/>
         <Space
             android:layout_width="100dp"
@@ -74,8 +75,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/secondChoiceBox"
-            android:textSize="20dp"
-            android:backgroundTint="@color/cardview_dark_background"
+            android:textSize="15dp"
+            android:backgroundTint="@color/black"
             android:text=""/>
 
 <!--        <Space-->
@@ -99,7 +100,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/thirdChoice"
-        android:backgroundTint="@color/cardview_dark_background"
+        android:textSize="15dp"
+        android:backgroundTint="@color/black"
         android:text=""/>
     <Space
         android:layout_width="300dp"

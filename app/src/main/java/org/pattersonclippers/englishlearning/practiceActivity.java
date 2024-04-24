@@ -20,6 +20,8 @@ public class practiceActivity extends AppCompatActivity {
     private String fileName= "org.pattersonclippers.EnglishLearning.App";
     private final String Name_Key="name";
     private final String COLOR_KEY="colors";
+    private final String TOBE_SCORE_KEY = "tobeScore";
+    private final String PAST_TENSE_SCORE_KEY = "pastTenseScore";
     SharedPreferences.Editor preferencesEditor;
     private final String SCORE_KEY = "Score";
     private final String categoryKey="category";
@@ -43,7 +45,9 @@ public class practiceActivity extends AppCompatActivity {
     String text,userName;
 
 
-    int score;
+
+    int tobeScore;
+    int pastTenseScore;
     int percentScore;
     int rightIndex;
     String category;
@@ -63,7 +67,8 @@ public class practiceActivity extends AppCompatActivity {
         backgroundColors=(LinearLayout) findViewById(R.id.backgroundColors);
        // total_question=(TextView)findViewById(R.id.total_question);
 
-        score=0;
+        tobeScore=0;
+        pastTenseScore=0;
 
 
 
@@ -179,11 +184,11 @@ public class practiceActivity extends AppCompatActivity {
                     Intent myIntent=new Intent(practiceActivity.this,scoreActivity.class);
                     Log.d(TAG,myIntent.toString());
 
-                    percentScore=score*100/questions.length;
 
-                    Log.d(TAG, String.valueOf(score));
+                    Log.d(TAG, String.valueOf(tobeScore));
 
-                    preferencesEditor.putInt(SCORE_KEY,percentScore);
+                    preferencesEditor.putInt(TOBE_SCORE_KEY,calculatePercentScore(tobeScore,8));
+                    preferencesEditor.putInt(PAST_TENSE_SCORE_KEY,calculatePercentScore(pastTenseScore,5));
                     preferencesEditor.apply();
 
 
@@ -197,12 +202,22 @@ public class practiceActivity extends AppCompatActivity {
 
 
 
+
+
         firstChoiceBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[0])){
                     text=getString(R.string.correctMessage);
-                    score=score+1;
+                    //score=score+1;
+                    if(currentQuestion.getCategory().equals(getString(R.string.CategoryOne))){
+                        tobeScore++;
+                    }
+                    else if (currentQuestion.getCategory().equals(getString(R.string.CategoryTwo))){
+                        pastTenseScore++;
+                    }
                     player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
                     player.start();
                 }else{
@@ -224,7 +239,12 @@ public class practiceActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[1])){
                     text="Right";
-                    score=score+1;
+                    if(currentQuestion.getCategory().equals(getString(R.string.CategoryOne))){
+                        tobeScore++;
+                    }
+                    else if (currentQuestion.getCategory().equals(getString(R.string.CategoryTwo))){
+                        pastTenseScore++;
+                    }
 
                     player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
                     player.start();
@@ -248,7 +268,12 @@ public class practiceActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[2])){
                     text="Right";
-                    score=score+1;
+                    if(currentQuestion.getCategory().equals(getString(R.string.CategoryOne))){
+                        tobeScore++;
+                    }
+                    else if (currentQuestion.getCategory().equals(getString(R.string.CategoryTwo))){
+                        pastTenseScore++;
+                    }
 
                     player=MediaPlayer.create(practiceActivity.this,R.raw.correct);
                     player.start();
@@ -266,4 +291,11 @@ public class practiceActivity extends AppCompatActivity {
             }
         });
     }
+    protected int calculatePercentScore(int numRight,int numTotal){
+        return numRight*100/numTotal;
+    }
+
+
+
+
 }

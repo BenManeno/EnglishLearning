@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class testActivity extends AppCompatActivity {
 
     private SharedPreferences myPreferences;
@@ -41,6 +43,8 @@ public class testActivity extends AppCompatActivity {
 
 
     int score;
+    ArrayList<String> wrongAnswer;
+    String feedback;
     int percentScore;
     int rightIndex;
 
@@ -59,6 +63,9 @@ public class testActivity extends AppCompatActivity {
         backgroundColors=(LinearLayout) findViewById(R.id.backgroundColors);
 
         score=0;
+   feedback="";
+   wrongAnswer = new ArrayList<>();
+
 
         myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
         preferencesEditor = myPreferences.edit();
@@ -136,8 +143,7 @@ public class testActivity extends AppCompatActivity {
 
                     preferencesEditor.putInt(SCORE_KEY,percentScore);
                     preferencesEditor.apply();
-
-
+                    //create multiObject after make the feedback  if and  else
 //                    myIntent.putExtra("Score",score);
                     startActivity(myIntent);
                 }
@@ -153,9 +159,15 @@ public class testActivity extends AppCompatActivity {
                 if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[0])){
                     text=getString(R.string.correctMessage);
                     score=score+1;
+                    if(score<50){
+                        
+                    }
                     player=MediaPlayer.create(testActivity.this,R.raw.correct);
                     player.start();
                 }else{
+                    String wrongMessage = currentQuestion.getQuestion()+"This is what Your choose"+ currentQuestion.getChoices()[0];
+                    wrongAnswer.add(wrongMessage);
+
                     text=getString(R.string.WrongMsg);
                     player=MediaPlayer.create(testActivity.this,R.raw.wrong);
                     player.start();
@@ -194,7 +206,7 @@ public class testActivity extends AppCompatActivity {
         thirdChoice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[0])){
+                if(currentQuestion.getCorrectAnswer().equals(currentQuestion.getChoices()[2])){
                     text=getString(R.string.correctMessage);
                     score=score+1;
                     player=MediaPlayer.create(testActivity.this,R.raw.correct);

@@ -39,8 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/testQuestionText"
-        android:textStyle="bold"
-        android:textSize="17dp"
+        android:textStyle="italic"
+        android:textSize="18dp"
         android:text="They _____ the movie last night."
        />
     <Space

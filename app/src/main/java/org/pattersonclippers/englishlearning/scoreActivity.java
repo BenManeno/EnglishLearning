@@ -22,9 +22,16 @@ public class scoreActivity extends AppCompatActivity {
     private final String SCORE = "Score";
     private final String TOBE_SCORE_KEY = "tobeScore";
     private final String PAST_TENSE_SCORE_KEY = "pastTenseScore";
+    private final String TEST_SCORE_KEY="testScore";
     LinearLayout backgroundColors;
     String greetingUser;
     String name;
+    int testScore;
+    int tobeScore;
+    int pastTenseScore;
+    ScoreObject scoreObject;
+
+
 
 
 
@@ -38,15 +45,24 @@ public class scoreActivity extends AppCompatActivity {
         greetingTV=(TextView) findViewById(R.id.greetingTV) ;
 
 
+
+
+
         myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
 
-        score =myPreferences.getInt(SCORE,0);
+
+
+
+
+
         //score for to be and past tense
-        score=myPreferences.getInt(TOBE_SCORE_KEY,0);
-        score=myPreferences.getInt(PAST_TENSE_SCORE_KEY,0);
+        tobeScore=myPreferences.getInt(TOBE_SCORE_KEY,0);
+        pastTenseScore=myPreferences.getInt(PAST_TENSE_SCORE_KEY,0);
+
+        scoreObject = new ScoreObject(tobeScore,pastTenseScore);
 
         name= myPreferences.getString(Name_Key,"");
-        greetingUser = "Hello  " + name +" Your doing amazing work ";
+        greetingUser = "Hello  " + name +" You doing amazing!! ";
         greetingTV.setText(greetingUser);
 
 
@@ -69,6 +85,11 @@ public class scoreActivity extends AppCompatActivity {
             backgroundColors.setBackgroundColor(getResources().getColor(R.color.white));
         }
 
+//
+//        Intent myIntent = getIntent();
+//        tobeScore= myIntent.getStringExtra(TOBE_SCORE_KEY);
+//
+//
 
 
 
@@ -77,13 +98,17 @@ public class scoreActivity extends AppCompatActivity {
         openTB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 Intent myIntent = new Intent(scoreActivity.this,progressActivity.class);
                 startActivity(myIntent);
             }
         });
 
+        scoreTV.setText(scoreObject.toString());
 
-        scoreTV.setText("Your score is  "+score +"%");
+
+       // scoreTV.setText("Your score is  "+score +"%");
 
 
     }

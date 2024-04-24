@@ -1,48 +1,45 @@
 package org.pattersonclippers.englishlearning;
 
-import java.util.ArrayList;
 
 public class ScoreObject {
 
-    private int score;
+//    private int score;
 
-    private ArrayList<String>wrongAnswers;
-    //private String wrongAnswer;
-    private String feedback;
+    private int tobeScore;
+    private int pastTenseScore;
+
+//    private ArrayList<String>wrongAnswers;
+//    //private String wrongAnswer;
+//    private String feedback;
 
     public ScoreObject(){
-        score=0;
-        feedback="";
-       wrongAnswers=new ArrayList<String>();
+//        score=0;
+        tobeScore=0;
+        pastTenseScore=0;
     }
 
-    public ScoreObject(int score,  ArrayList<String>wrongAnswers, String feedback) {
-        this.score = score;
-       this.wrongAnswers=wrongAnswers;
-        this.feedback = feedback;
+    public ScoreObject(int tobeScore, int pastTenseScore) {
+//        this.score = score;
+       this.tobeScore=tobeScore;
+       this.pastTenseScore=pastTenseScore;
     }
 
-    public ArrayList<String> getWrongAnswer() {
-        return wrongAnswers;
+
+//    public int getScore() {
+//        return score;
+//    }
+
+    public int getTobeScore() {
+        return tobeScore;
     }
 
-    public int getScore() {
-        return score;
+    public int getPastTenseScore() {
+        return pastTenseScore;
     }
 
-    public String getFeedback() {
-        return feedback;
-    }
-
-    public void setFeedback(String feedback) {
-        this.feedback = feedback;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-
-    public void setWrongAnswer(ArrayList<String> wrongAnswer) {
-        this.wrongAnswers= wrongAnswer;
+    @Override
+    public String toString() {
+        return "To be score = " + tobeScore + "%"+
+                "\nPast Tense Score = " + pastTenseScore +"%";
     }
 }

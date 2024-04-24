@@ -57,10 +57,12 @@ public class progressActivity extends AppCompatActivity {
 
 
         simplePastProgressBar.setProgress(pastTenseScore);
-        simplePastPercentTV.setText(pastTenseScore);
+
+        simplePastPercentTV.setText(pastTenseScore+"%");
+
         //
         toBeProgress.setProgress(tobeScore);
-        tobePercentTV.setText(tobeScore);
+        tobePercentTV.setText(tobeScore+"%");
 
 
         //tobePercentTV.setText(score);

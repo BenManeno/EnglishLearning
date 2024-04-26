@@ -6,17 +6,17 @@
     <string name="CategoryOne">To be</string>
 
 
-    <string name="question1Text"> ______time did you wake up?</string>
-    <string name="firstChoiceBox">What</string>
-    <string name="secondChoiceBox">Who</string>
-    <string name="thirdChoice">not</string>
+    <string name="question1Text">My name_______Ben</string>
+    <string name="firstChoiceBox">is</string>
+    <string name="secondChoiceBox">is not</string>
+    <string name="thirdChoice">is</string>
 
     <string name="correctMessage">Right</string>
     <string name="WrongMsg">Wrong</string>
-    <string name="correctAnswerBox1">What</string>
-    <string name="NewBox1">What</string>
-    <string name="NewBoxText1">who</string>
-    <string name="TNewBoxText1Practice">Who</string>
+    <string name="correctAnswerBox1">is</string>
+    <string name="NewBox1">is not </string>
+    <string name="NewBoxText1">it</string>
+    <string name="TNewBoxText1Practice">its</string>
 
 
     <string name="question2Text"> You _____very kind.</string>
@@ -94,11 +94,11 @@
     <string name="NewBoxText4Test">say</string>
     <string name="TNewBoxText4Test">saying</string>
 
-    <string name="question5PastTest">My mom  . . . to dubai with my uncle few days ago.</string>
+    <string name="question5PastTest">My mom  . . . to Dubai with my uncle few days ago.</string>
     <string name="correctAnswerBox5Test">went</string>
     <string name="NewBox5Test">goes</string>
     <string name="NewBoxText5Test">went</string>
-    <string name="TNewBoxText5Test">went</string>
+    <string name="TNewBoxText5Test">go</string>
 
 
     <string name="question6PastTest">He _________goodbye.</string>
@@ -108,18 +108,18 @@
     <string name="TNewBoxText6Test">saying</string>
 
     ///
-    <string name="question7PastTest">He ______ TV most evening.</string>
-    <string name="correctAnswerBox7Test">watches</string>
+    <string name="question7PastTest">He ______ TV last evening.</string>
+    <string name="correctAnswerBox7Test">watched</string>
     <string name="NewBox7Test">is watch</string>
     <string name="NewBoxText7Test">is watching</string>
-    <string name="TNewBoxText7Test">watches</string>
+    <string name="TNewBoxText7Test">watched</string>
 
 
-    <string name="question8PastTest">The baby _______ all morning. </string>
-    <string name="correctAnswerBox8Test"> has been crying</string>
+    <string name="question8PastTest">The baby _______ this morning. </string>
+    <string name="correctAnswerBox8Test">was crying </string>
     <string name="NewBox8Test">cries</string>
     <string name="NewBoxText8Test">has been crying</string>
-    <string name="TNewBoxText8Test">cry</string>
+    <string name="TNewBoxText8Test">was crying </string>
 
 
     <string name="question9PastTest"> How many cups of tea_____ yesterday? </string>
@@ -132,7 +132,7 @@
     <string name="question10PastTest">I____from college three years ago</string>
     <string name="correctAnswerBox10Test">graduated</string>
     <string name="NewBox10Test">graduated</string>
-    <string name="NewBoxText10Test">moved</string>
+    <string name="NewBoxText10Test">was</string>
     <string name="TNewBoxText10Test">graduate</string>
 
 

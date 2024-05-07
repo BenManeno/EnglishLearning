@@ -30,7 +30,7 @@ public class testActivity extends AppCompatActivity {
 
 
     Question question1,question2,question3,question4,question5,
-            question6,question7,question8,question9,question10,
+            question6,question7,question8,question9,question10,question11,question12,question13,question14,question15,question16,question17,question18,
             currentQuestion;
     Question[]questions;
 
@@ -103,11 +103,28 @@ public class testActivity extends AppCompatActivity {
         question4=new Question(getString(R.string.question4PastTest),new String[]{getString(R.string.NewBoxText4Test),getString(R.string.NewBox4Test),getString(R.string.TNewBoxText4Test)},getString(R.string.correctAnswerBox4Test),getString(R.string.CategoryTwo));
         question5=new Question(getString(R.string.question5PastTest),new String[]{getString(R.string.NewBoxText5Test),getString(R.string.NewBox5Test),getString(R.string.TNewBoxText5Test)},getString(R.string.correctAnswerBox5Test),getString(R.string.CategoryTwo));
         question6=new Question(getString(R.string.question6Text),new String[]{getString(R.string.NewBox6),getString(R.string.NewBoxText6),getString(R.string.TNewBoxText6Practice)},getString(R.string.correctAnswerBox6),getString(R.string.CategoryOne));
+        question7=new Question(getString(R.string.question7Text),new String[]{getString(R.string.NewBox7),getString(R.string.NewBoxText7),getString(R.string.TNewBoxText7Practice)},getString(R.string.correctAnswerBox7),getString(R.string.CategoryOne));
+        question8=new Question(getString(R.string.question4Text),new String[]{getString(R.string.NewBox4),getString(R.string.NewBoxText4),getString(R.string.TNewBoxText4Practice)},getString(R.string.correctAnswerBox4),getString(R.string.CategoryOne));
+
+        question9=new Question(getString(R.string.question11PastTest),new String[]{getString(R.string.NewBoxText11Test),getString(R.string.NewBox11Test),getString(R.string.TNewBoxText11Test)},getString(R.string.correctAnswerBox11Test),getString(R.string.CategoryTwo));
+        question10=new Question(getString(R.string.question12PastTest),new String[]{getString(R.string.NewBoxText12Test),getString(R.string.NewBox12Test),getString(R.string.TNewBoxText12Test)},getString(R.string.correctAnswerBox12Test),getString(R.string.CategoryTwo));
+
+        question11=new Question(getString(R.string.question13PastTest),new String[]{getString(R.string.NewBoxText13Test),getString(R.string.NewBox13Test),getString(R.string.TNewBoxText13Test)},getString(R.string.correctAnswerBox13Test),getString(R.string.CategoryTwo));
+        question12=new Question(getString(R.string.question14PastTest),new String[]{getString(R.string.NewBoxText14Test),getString(R.string.NewBox14Test),getString(R.string.TNewBoxText14Test)},getString(R.string.correctAnswerBox14Test),getString(R.string.CategoryTwo));
+        question13=new Question(getString(R.string.question15PastTest),new String[]{getString(R.string.NewBoxText15Test),getString(R.string.NewBox15Test),getString(R.string.TNewBoxText15Test)},getString(R.string.correctAnswerBox15Test),getString(R.string.CategoryTwo));
+        question14=new Question(getString(R.string.question9Text),new String[]{getString(R.string.NewBox9),getString(R.string.NewBoxText9),getString(R.string.TNewBoxText9Practice)},getString(R.string.correctAnswerBox9),getString(R.string.CategoryOne));
+        question15=new Question(getString(R.string.question10Text),new String[]{getString(R.string.NewBox10),getString(R.string.NewBoxText10),getString(R.string.TNewBoxText10Practice)},getString(R.string.correctAnswerBox10),getString(R.string.CategoryOne));
+        question16=new Question(getString(R.string.question11Text),new String[]{getString(R.string.NewBox11),getString(R.string.NewBoxText11),getString(R.string.TNewBoxText11Practice)},getString(R.string.correctAnswerBox11),getString(R.string.CategoryOne));
+
+
+        question17=new Question(getString(R.string.question16PastTest),new String[]{getString(R.string.NewBoxText16Test),getString(R.string.NewBox16Test),getString(R.string.TNewBoxText16Test)},getString(R.string.correctAnswerBox16Test),getString(R.string.CategoryTwo));
+        question18=new Question(getString(R.string.question17PastTest),new String[]{getString(R.string.NewBoxText17Test),getString(R.string.NewBox17Test),getString(R.string.TNewBoxText17Test)},getString(R.string.correctAnswerBox17Test),getString(R.string.CategoryTwo));
         // create question 1D array
 
 
+
         questions=new Question[]{question1,question2,question3,question4,
-                question5,question6};
+                question5,question6,question7,question8,question9,question10,question11,question12,question13,question14,question15,question16,question17,question18};
 
 
         rightIndex=0;
@@ -130,12 +147,6 @@ public class testActivity extends AppCompatActivity {
         firstChoiceBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if(rightIndex<questions.length-1) {
-                    rightIndex++;
-                    Log.d(TAG, rightIndex + "");
-                    currentQuestion = questions[rightIndex];
-                }
 
 
 
@@ -248,14 +259,14 @@ public class testActivity extends AppCompatActivity {
             percentScore=score*100/questions.length;
 
             if(percentScore<50){
-                feedback="keep study more" ;
+                feedback="keep study more please!" ;
 
-            } else if (percentScore<80) {
-                feedback="Almost there keep going ";
+            } else if (percentScore<70) {
+                feedback="Almost there keep study try again. ";
 
             }
             else {
-                feedback="Great ,you doing amazing";
+                feedback="Great ,you doing amazing.";
             }
 
             Log.d(TAG, String.valueOf(score));

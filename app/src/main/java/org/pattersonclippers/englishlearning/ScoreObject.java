@@ -40,6 +40,7 @@ public class ScoreObject {
     @Override
     public String toString() {
         return "To be score = " + tobeScore + "%"+
+                "\n"+
                 "\nPast Tense Score = " + pastTenseScore +"%";
     }
 }

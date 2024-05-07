@@ -2,14 +2,18 @@ package org.pattersonclippers.englishlearning;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class TestScoreActivity extends AppCompatActivity {
 
     TextView testScoreResult;
+    Button backButton;
 
     private SharedPreferences myPreferences;
     private String fileName= "org.pattersonclippers.EnglishLearning.App";
@@ -31,6 +35,7 @@ public class TestScoreActivity extends AppCompatActivity {
 
         testScoreResult=(TextView) findViewById(R.id.testScoreResult);
         backgroundColors=(LinearLayout) findViewById(R.id.backgroundColors);
+        backButton=(Button)findViewById(R.id.backButton);
 
         myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
 
@@ -58,5 +63,14 @@ public class TestScoreActivity extends AppCompatActivity {
 
 
         testScoreResult.setText(textMessage);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(TestScoreActivity.this,CategoriesActivity.class);
+                startActivity(myIntent);
+            }
+        });
     }
+
 }

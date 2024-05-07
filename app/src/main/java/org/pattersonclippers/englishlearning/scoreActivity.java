@@ -45,14 +45,7 @@ public class scoreActivity extends AppCompatActivity {
         greetingTV=(TextView) findViewById(R.id.greetingTV) ;
 
 
-
-
-
         myPreferences=getSharedPreferences(fileName,MODE_PRIVATE);
-
-
-
-
 
 
         //score for to be and past tense
@@ -62,7 +55,7 @@ public class scoreActivity extends AppCompatActivity {
         scoreObject = new ScoreObject(tobeScore,pastTenseScore);
 
         name= myPreferences.getString(Name_Key,"");
-        greetingUser = "Hello  " + name +" You doing amazing!! ";
+        greetingUser = "Hello  " + name +" Here is your score : ";
         greetingTV.setText(greetingUser);
 
 
@@ -84,16 +77,6 @@ public class scoreActivity extends AppCompatActivity {
         else {
             backgroundColors.setBackgroundColor(getResources().getColor(R.color.white));
         }
-
-//
-//        Intent myIntent = getIntent();
-//        tobeScore= myIntent.getStringExtra(TOBE_SCORE_KEY);
-//
-//
-
-
-
-
 
         openTB.setOnClickListener(new View.OnClickListener() {
             @Override

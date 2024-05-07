@@ -10,8 +10,6 @@
     tools:context=".CategoriesActivity">
 
 
-
-
     <TextView
         android:id="@+id/greetingTV"
         android:text=""

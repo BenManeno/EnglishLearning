@@ -19,16 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="20dp"/>
 
-
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/total_question"-->
-<!--        android:textSize="25dp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:text="Total Question : 1/n"/>-->
-
-
     <TextView
         android:id="@+id/practiceTV"
         android:layout_width="wrap_content"
@@ -78,20 +68,6 @@
             android:textSize="15dp"
             android:backgroundTint="@color/black"
             android:text=""/>
-
-<!--        <Space-->
-<!--            android:layout_width="50dp"-->
-<!--            android:layout_height="50dp"/>-->
-
-<!--        <Button-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:id="@+id/thirdChoice"-->
-<!--            android:textSize="20dp"-->
-<!--            android:backgroundTint="@color/cardview_dark_background"-->
-<!--            android:text="are"/>-->
-
-
 
 
     </LinearLayout>

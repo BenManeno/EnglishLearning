@@ -32,7 +32,7 @@ public class practiceActivity extends AppCompatActivity {
 
     Question question1,question2,question3,question4,question5,
             question6,question7,question8,
-            question9,question10,question11,question12,question13,
+            question9,question10,question11,question12,question13,question14,question15,question16,question17,
             currentQuestion;
     Question[]questions;
 
@@ -109,7 +109,7 @@ public class practiceActivity extends AppCompatActivity {
 
 
         question1=new Question(getString(R.string.question1Text),new String[]{getString(R.string.NewBox1),getString(R.string.NewBoxText1),getString(R.string.TNewBoxText1Practice)},getString(R.string.correctAnswerBox1),getString(R.string.CategoryOne));
-        question2=new Question(getString(R.string.question2Text),new String[]{getString(R.string.NewBox2),getString(R.string.NewBoxText2),getString(R.string.TNewBoxText2Practice)},getString(R.string.correctAnswerBox2),getString(R.string.CategoryOne));
+        question2=new Question(getString(R.string.question7Text),new String[]{getString(R.string.NewBox7),getString(R.string.NewBoxText7),getString(R.string.TNewBoxText7Practice)},getString(R.string.correctAnswerBox7),getString(R.string.CategoryOne));
         question3=new Question(getString(R.string.question3Text),new String[]{getString(R.string.NewBox3),getString(R.string.NewBoxText3),getString(R.string.TNewBoxText3Practice)},getString(R.string.correctAnswerBox3),getString(R.string.CategoryOne));
         question4=new Question(getString(R.string.question4Text),new String[]{getString(R.string.NewBox4),getString(R.string.NewBoxText4),getString(R.string.TNewBoxText4Practice)},getString(R.string.correctAnswerBox4),getString(R.string.CategoryOne));
         question5=new Question(getString(R.string.question5Text),new String[]{getString(R.string.NewBox5),getString(R.string.NewBoxText5),getString(R.string.TNewBoxText5Practice)},getString(R.string.correctAnswerBox5),getString(R.string.CategoryOne));
@@ -121,11 +121,17 @@ public class practiceActivity extends AppCompatActivity {
         question11=new Question(getString(R.string.question8PastTest),new String[]{getString(R.string.NewBoxText8Test),getString(R.string.NewBox8Test),getString(R.string.TNewBoxText8Test)},getString(R.string.correctAnswerBox8Test),getString(R.string.CategoryTwo));
         question12=new Question(getString(R.string.question9PastTest),new String[]{getString(R.string.NewBoxText9Test),getString(R.string.NewBox9Test),getString(R.string.TNewBoxText9Test)},getString(R.string.correctAnswerBox9Test),getString(R.string.CategoryTwo));
         question13=new Question(getString(R.string.question10PastTest),new String[]{getString(R.string.NewBoxText10Test),getString(R.string.NewBox10Test),getString(R.string.TNewBoxText10Test)},getString(R.string.correctAnswerBox10Test),getString(R.string.CategoryTwo));
+        //question18=new Question(getString(R.string.question8Text),new String[]{getString(R.string.NewBox8),getString(R.string.NewBoxText8),getString(R.string.TNewBoxText8Practice)},getString(R.string.correctAnswerBox8),getString(R.string.CategoryOne));
+       question14=new Question(getString(R.string.question12PastTest),new String[]{getString(R.string.NewBoxText12Test),getString(R.string.NewBox12Test),getString(R.string.TNewBoxText12Test)},getString(R.string.correctAnswerBox12Test),getString(R.string.CategoryTwo));
+
+        question15=new Question(getString(R.string.question9Text),new String[]{getString(R.string.NewBox9),getString(R.string.NewBoxText9),getString(R.string.TNewBoxText9Practice)},getString(R.string.correctAnswerBox9),getString(R.string.CategoryOne));
+        question16=new Question(getString(R.string.question10Text),new String[]{getString(R.string.NewBox10),getString(R.string.NewBoxText10),getString(R.string.TNewBoxText10Practice)},getString(R.string.correctAnswerBox10),getString(R.string.CategoryOne));
+        question17=new Question(getString(R.string.question11Text),new String[]{getString(R.string.NewBox11),getString(R.string.NewBoxText11),getString(R.string.TNewBoxText11Practice)},getString(R.string.correctAnswerBox11),getString(R.string.CategoryOne));
 
         // create question 1D array
 
 
-        questions=new Question[]{question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13};
+        questions=new Question[]{question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13,question14,question15,question16};
 
 
         rightIndex=0;
@@ -230,6 +236,7 @@ public class practiceActivity extends AppCompatActivity {
                 int duration = Toast.LENGTH_SHORT;
                 Toast t =Toast.makeText(getApplicationContext(),text,duration);
                 t.show();
+              //  goToTheNextQuestion();
 
             }
         });
@@ -258,6 +265,7 @@ public class practiceActivity extends AppCompatActivity {
                 int duration=Toast.LENGTH_SHORT;
                 Toast t =Toast.makeText(getApplicationContext(),text,duration);
                 t.show();
+              //  goToTheNextQuestion();
 
             }
         });
@@ -287,6 +295,7 @@ public class practiceActivity extends AppCompatActivity {
                 int duration=Toast.LENGTH_SHORT;
                 Toast t =Toast.makeText(getApplicationContext(),text,duration);
                 t.show();
+                //goToTheNextQuestion();
 
             }
         });
@@ -294,6 +303,28 @@ public class practiceActivity extends AppCompatActivity {
     protected int calculatePercentScore(int numRight,int numTotal){
         return numRight*100/numTotal;
     }
+
+
+//    public void goToTheNextQuestion() {
+//        if (rightIndex < questions.length-1) {
+//            rightIndex++;
+//            Log.d(TAG, rightIndex + "");
+//            currentQuestion = questions[rightIndex];
+//
+//            Log.d(TAG, currentQuestion.toString());
+//
+//            practiceQTV.setText(currentQuestion.getQuestion());
+//            firstChoiceBox.setText(currentQuestion.getChoices()[0]);
+//            secondChoiceBox.setText(currentQuestion.getChoices()[1]);
+//            thirdChoice.setText(currentQuestion.getChoices()[2]);
+//
+//        } else {
+//
+//            Intent myIntent = new Intent(practiceActivity.this, TestScoreActivity.class);
+//            Log.d(TAG, myIntent.toString());
+//
+//        }
+//    }
 
 
 

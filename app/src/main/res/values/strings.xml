@@ -14,7 +14,7 @@
     <string name="correctMessage">Right</string>
     <string name="WrongMsg">Wrong</string>
     <string name="correctAnswerBox1">is</string>
-    <string name="NewBox1">is not </string>
+    <string name="NewBox1">is</string>
     <string name="NewBoxText1">it</string>
     <string name="TNewBoxText1Practice">its</string>
 
@@ -63,6 +63,34 @@
     <string name="NewBox8">are</string>
     <string name="NewBoxText8">is</string>
     <string name="TNewBoxText8Practice">is not </string>
+
+
+    <string name="question9Text">I______a student last year.</string>
+    <string name="correctAnswerBox9">was</string>
+    <string name="NewBox9">am</string>
+    <string name="NewBoxText9">was</string>
+    <string name="TNewBoxText9Practice">be</string>
+
+
+    <string name="question10Text">We_______excited for the party tomorrow.</string>
+    <string name="correctAnswerBox10">are</string>
+    <string name="NewBox10">am</string>
+    <string name="NewBoxText10">may</string>
+    <string name="TNewBoxText10Practice">are</string>
+
+    <string name="question11Text">I________a doctor when I grow up.</string>
+    <string name="correctAnswerBox11">will be</string>
+    <string name="NewBox11">was</string>
+    <string name="NewBoxText11">am</string>
+    <string name="TNewBoxText11Practice">will be</string>
+
+    <string name="question12Text">The book_________on the table last night.</string>
+    <string name="correctAnswerBox12">was</string>
+    <string name="NewBox12">is</string>
+    <string name="NewBoxText12">was</string>
+    <string name="TNewBoxText12Practice">will be</string>
+
+
 
     /// category two
 
@@ -134,6 +162,52 @@
     <string name="NewBox10Test">graduated</string>
     <string name="NewBoxText10Test">was</string>
     <string name="TNewBoxText10Test">graduate</string>
+
+    <string name="question11PastTest">She______ Spanish one year ago.</string>
+    <string name="correctAnswerBox11Test">studied</string>
+    <string name="NewBox11Test">study</string>
+    <string name="NewBoxText11Test">learn</string>
+    <string name="TNewBoxText11Test">studied</string>
+
+
+    <string name="question12PastTest">She______to the store yesterday.</string>
+    <string name="correctAnswerBox12Test">went</string>
+    <string name="NewBox12Test">went</string>
+    <string name="NewBoxText12Test">not go</string>
+    <string name="TNewBoxText12Test">may</string>
+
+    <string name="question13PastTest">They________pizza for dinner last night.</string>
+    <string name="correctAnswerBox13Test">ate</string>
+    <string name="NewBox13Test">eating</string>
+    <string name="NewBoxText13Test">eats</string>
+    <string name="TNewBoxText13Test">ate</string>
+
+    <string name="question14PastTest">He________for his exam all day.</string>
+    <string name="correctAnswerBox14Test">studied</string>
+    <string name="NewBox14Test">tried</string>
+    <string name="NewBoxText14Test">did</string>
+    <string name="TNewBoxText14Test">studied</string>
+
+    <string name="question15PastTest">I_________soccer with my friends yesterday afternoon.</string>
+    <string name="correctAnswerBox15Test">played</string>
+    <string name="NewBox15Test">playing</string>
+    <string name="NewBoxText15Test">played</string>
+    <string name="TNewBoxText15Test">learned</string>
+
+
+    <string name="question16PastTest">My family_________a picnic at the park last weekend.</string>
+    <string name="correctAnswerBox16Test">had</string>
+    <string name="NewBox16Test">were</string>
+    <string name="NewBoxText16Test">will</string>
+    <string name="TNewBoxText16Test">had</string>
+
+    <string name="question17PastTest">The artist__________a beautiful painting.</string>
+    <string name="correctAnswerBox17Test">created</string>
+    <string name="NewBox17Test">make</string>
+    <string name="NewBoxText17Test">created</string>
+    <string name="TNewBoxText17Test">made</string>
+
+
 
 
 </resources>

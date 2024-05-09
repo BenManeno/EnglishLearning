@@ -31,6 +31,9 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textAlignment="center"
+
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textStyle="italic"
         android:textSize="22dp" />
     <Space

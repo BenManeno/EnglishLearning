@@ -14,6 +14,8 @@
         android:textSize="30dp"
         android:layout_marginTop="-30dp"
         android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:text="PRACTICE SECTION "/>
     <Space
         android:layout_width="wrap_content"
@@ -24,6 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" "
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="22dp"
         android:textStyle="bold" />
 
@@ -31,6 +35,8 @@
         android:layout_width="wrap_content"
         android:layout_marginTop="70dp"
         android:id="@+id/practiceQTV"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="25dp"
 
         android:layout_height="wrap_content"
@@ -50,13 +56,16 @@
 
 
         <Button
+            android:id="@+id/firstChoiceBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/firstChoiceBox"
+            android:text=""
 
-            android:backgroundTint="@color/black"
-            android:textSize="15dp"
-            android:text=""/>
+            android:textColor="@color/white"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:textColorHint="@color/black"
+            android:textSize="25dp" />
+
         <Space
             android:layout_width="100dp"
             android:layout_height="10dp"/>
@@ -65,8 +74,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/secondChoiceBox"
-            android:textSize="15dp"
-            android:backgroundTint="@color/black"
+            android:textSize="25dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"
             android:text=""/>
 
 
@@ -76,8 +87,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/thirdChoice"
-        android:textSize="15dp"
-        android:backgroundTint="@color/black"
+        android:textSize="25dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
         android:text=""/>
     <Space
         android:layout_width="300dp"
@@ -85,8 +98,10 @@
 />
     <Button
         android:id="@+id/nextBTN"
+        android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_dark_background"
         android:text="NEXT QUESTION" />
 
 

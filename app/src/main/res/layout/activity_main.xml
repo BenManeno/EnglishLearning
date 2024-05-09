@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:gravity="top"
+        android:textColor="@color/black"
         android:textSize="22dp"
         android:text="SIGN IN "/>
 
@@ -42,8 +43,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+
 
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColor="@color/black"
         tools:ignore="MissingConstraints">
         <Space
             android:layout_width="match_parent"
@@ -55,9 +59,13 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:ems="5"
+            android:textColor="@color/black"
+
             android:gravity="center"
+        android:textColorHint="@color/black"
+
             android:layout_gravity="center"
-            android:hint="Enter Your name"
+            android:hint="Enter your name"
             android:inputType="textPersonName"
 
 
@@ -71,12 +79,14 @@
         android:layout_height="wrap_content"
         android:textSize="13dp"
         android:textStyle="italic"
+        android:textColor="@color/black"
         android:text="Password is : 777"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:passwordToggleEnabled="true"
+        android:textColorHint="@color/black"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         tools:ignore="MissingConstraints">
 
@@ -90,8 +100,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="5"
+            android:textColorHint="@color/black"
             android:gravity="center"
             android:hint="Password"
+            android:textColor="@color/black"
             android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -117,6 +129,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
+
         android:text="Save"
         android:textColor="@color/white"/>
     <Space
@@ -137,8 +150,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:textStyle="italic"
-        android:textColor="@color/cardview_dark_background"
         android:text="Choose background color : "/>
 
     <Space
@@ -153,12 +166,14 @@
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:orientation="horizontal"
+        android:textColor="@color/black"
         android:layout_height="wrap_content">
 
         <RadioButton
             android:id="@+id/silver"
             android:layout_width="90dp"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="silver"/>
 
 
@@ -166,10 +181,12 @@
             android:id="@+id/vanilla"
             android:layout_width="76dp"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="Vanilla"/>
         <RadioButton
             android:id="@+id/skyblue"
             android:layout_width="90dp"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="blue"/>
 
@@ -178,6 +195,7 @@
             android:id="@+id/yellow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="Yellow "/>
 
     </RadioGroup>
